@@ -51,6 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $route['default_controller'] = 'Welcome';
+$route['blog/detail/(:any)'] = 'blog/detail/$1';
+//$route['testing-artikel'] = 'blog';
 // $route['Products/(:num)']='Products';
 // $route['productDetail/(:num)']='Products/productDetail/product_lookup';
 $route['404_override'] = '';

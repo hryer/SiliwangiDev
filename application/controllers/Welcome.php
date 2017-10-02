@@ -18,8 +18,28 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
+	public function index(){
 		$this->load->view('index');
+	}
+
+	public function send($value=""){
+		// load email lib
+		$this->load->library('email');
+
+		// config
+		$config = array(
+			'mailtype'=>'html',
+			);
+
+		// override the config options
+		$this->email->initialize($config);
+
+		$this->email->from('user@siliwangidev.com');
+		$this->email->subject('CI send Email');
+		$this->email->message(
+			str_replace("{content}"),
+			$this->email_text(),
+			$this->email_template()
+			);
 	}
 }

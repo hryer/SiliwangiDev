@@ -8,7 +8,7 @@
 	<?php foreach($posts as $post): ?>
 		<h1><?php echo $post->title; ?></h1>
 		
-		<a href="<?php echo base_url('blog/detail/').$post->id;  ?>">Read More</a>
+		<a href="<?php echo base_url('blog/detail/').$post->slug;  ?>">Read More</a>
 	<?php endforeach; ?>
 <?php endif; ?>
 </body>
