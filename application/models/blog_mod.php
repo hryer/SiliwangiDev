@@ -6,6 +6,10 @@ class Blog_mod extends CI_Model{
 		parent::__construct();
 	}
 
+	public function get_blog(){
+		return $this->db->get('blog_tbl')->result();
+	}
+
 } 
 
 ?>

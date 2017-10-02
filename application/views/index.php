@@ -60,7 +60,7 @@
 					<li><a href="#team">OUR TEAM</a></li>
 					<li><a href="#portfolio">PORTFOLIO</a></li>
 					<li><a href="#contact">CONTACT US</a></li>
-					<li><a href="https://www.blog.siliwangidev.com">BLOG</a></li>
+					<li><a href="<?php echo base_url(); ?>blog">BLOG</a></li>
 
 				</ul><!-- nav navbar-nav-ends -->
 			</div><!-- navbar-collapse-ends -->
