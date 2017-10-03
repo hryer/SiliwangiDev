@@ -20,26 +20,14 @@ class Welcome extends CI_Controller {
 	 */
 	public function index(){
 		$this->load->view('index');
+		$this->load->library('form_validation');
 	}
 
-	public function send($value=""){
-		// load email lib
-		$this->load->library('email');
+	public function submitForm(){
+		$this->form_validation->set_rules('fname', 'Username', 'required',array('required'=>'Please Fill Your name'));
+	 	$this->form_validation->set_rules('pass', 'Password', 'required',array('required'=>'Please Fill Password'));
+	 	$this->form_validation->set_rules
 
-		// config
-		$config = array(
-			'mailtype'=>'html',
-			);
-
-		// override the config options
-		$this->email->initialize($config);
-
-		$this->email->from('user@siliwangidev.com');
-		$this->email->subject('CI send Email');
-		$this->email->message(
-			str_replace("{content}"),
-			$this->email_text(),
-			$this->email_template()
-			);
 	}
+
 }

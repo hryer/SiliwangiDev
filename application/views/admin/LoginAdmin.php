@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Log'n Load</title>
+  <title>Login Admin</title>
   <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 
 
@@ -21,8 +21,8 @@
     <span class="loader"></span>
   </header>
   <form class="form" method="post">  
-    <input class="input" type="text", placeholder="Username">
-    <input class="input" type="password" placeholder="Password">
+    <input class="input" type="text" name="username" placeholder="Username">
+    <input class="input" type="password" name="password" placeholder="Password">
     
     <button class="btn" type="submit"></button>
   </form>

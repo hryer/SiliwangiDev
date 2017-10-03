@@ -7,7 +7,7 @@
 		function __construct()
 		{
 			parent::__construct();
-			//$this->load->library('form-validation');
+			$this->load->library('form_validation');
 			$this->load->library('session');
 			$this->load->model('Admin_mod');
 		}

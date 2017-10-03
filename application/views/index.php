@@ -16,18 +16,18 @@
 
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/superslides/superslides.css">
-    <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/plugin/animate.css">
-    <link rel="stylesheet" href="css/plugin/owl.carousel.css">
-    <link rel="stylesheet" href="css/plugin/owl.theme.css">
-    <link rel="stylesheet" href="css/plugin/owl.transitions.css">
-    <link rel="stylesheet" href="css/plugin/magnific-popup.css">
-    <link rel="stylesheet" href="css/plugin/nivo-lightbox.css">
-    <link rel="stylesheet" href="css/themes/default/default.css">
+    <link href="<?php echo base_url();  ?>css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url();  ?>css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url();  ?>css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo base_url();  ?>css/superslides/superslides.css">
+    <link rel="stylesheet" href="<?php echo base_url();  ?>css/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="<?php echo base_url();  ?>css/plugin/animate.css">
+    <link rel="stylesheet" href="<?php echo base_url();  ?>css/plugin/owl.carousel.css">
+    <link rel="stylesheet" href="<?php echo base_url();  ?>css/plugin/owl.theme.css">
+    <link rel="stylesheet" href="<?php echo base_url();  ?>css/plugin/owl.transitions.css">
+    <link rel="stylesheet" href="<?php echo base_url();  ?>css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo base_url();  ?>css/plugin/nivo-lightbox.css">
+    <link rel="stylesheet" href="<?php echo base_url();  ?>css/themes/default/default.css">
 	
 	<!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:100,600' rel='stylesheet' type='text/css'>
@@ -46,7 +46,7 @@
 				</button>
 				<a href="#home" class="navbar-brand page-scroll">
 					<span class="logo">
-						<img src="images/logo.svg" alt="logo" width="45" height="37">
+						<img src="<?php echo base_url();  ?>images/logo.svg" alt="logo" width="45" height="37">
 					</span>
 				</a>
 			
@@ -80,7 +80,7 @@
 				<ul class="slides-container">
 					<!-- slides 1 begin -->
 					<li>
-						<img src="images/slides/1.jpg" alt="website-consultan" class="slide-img">
+						<img src="<?php echo base_url();  ?>images/slides/1.jpg" alt="website-consultan" class="slide-img">
 						<div class="container">
 							<div class="row">
 								<div class="col-lg-12 col-md-12 col-xs-12">
@@ -103,7 +103,7 @@
 					<!-- slides 1 end -->
 					<!-- slides 2 begin -->
 					<li>
-						<img src="images/slides/2.jpg" alt="konsultan-terpercaya" class="slide-img">
+						<img src="<?php echo base_url();  ?>images/slides/2.jpg" alt="konsultan-terpercaya" class="slide-img">
 						<div class="container">
 							<div class="row">
 								<div class="col-lg-12 col-md-12 col-xs-12">
@@ -125,7 +125,7 @@
 					<!-- slides 2 end -->
 					<!-- slides 3 begin -->
 					<li>
-						<img src="images/slides/3.jpg" class="slide-img">
+						<img src="<?php echo base_url();  ?>images/slides/3.jpg" class="slide-img">
 						<div class="container">
 							<div class="row">
 								<div class="col-lg-12 col-md-12 col-xs-12">
@@ -181,7 +181,7 @@
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					
 					<a href="https://www.youtube.com/embed/JGwWNGJdvx8" class="youtube-media" target="blank" >
-						<img src="images/play.png" class="img-responsive" >
+						<img src="<?php echo base_url();  ?>images/play.png" class="img-responsive" >
 					</a>
 
 				</div>
@@ -273,7 +273,7 @@
 		<div class="container product-content"><!-- Container Starts -->
 			<div class="row"><!-- Row Starts -->
 				<div class="col-md-4"> <!-- col-md-4 starts -->
-					<img src="images/mobile.png" class="center-block img-responsive" alt="">
+					<img src="<?php echo base_url();  ?>images/mobile.png" class="center-block img-responsive" alt="">
 				</div> <!-- col-md-4 ends -->
 
 				<div class="col-md-8"> <!-- col-md-8 starts -->
@@ -366,7 +366,7 @@
 						<div class="col-md-4"> <!-- col-md-4 starts -->
 							<div class="team-member wow fadeIn" data-wow-offset="10"> <!-- team-member starts -->
 								<figure>
-									<img src="images/Team/team1.jpg" alt="Team 1" class="img-responsive">
+									<img src="<?php echo base_url();  ?>images/Team/team1.jpg" alt="Team 1" class="img-responsive">
 									<figcaption>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis quibusdam nesciunt iure dignis</p>
 									<ul>
@@ -384,7 +384,7 @@
 						<div class="col-md-4"> <!-- col-md-4 starts -->
 							<div class="team-member wow fadeIn" data-wow-offset="10"> <!-- team-member starts -->
 								<figure>
-									<img src="images/Team/team2.jpg" alt="Team 2" class="img-responsive">
+									<img src="<?php echo base_url();  ?>images/Team/team2.jpg" alt="Team 2" class="img-responsive">
 									<figcaption>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis quibusdam nesciunt iure dignis</p>
 									<ul>
@@ -402,7 +402,7 @@
 						<div class="col-md-4"> <!-- col-md-4 starts -->
 							<div class="team-member wow fadeIn" data-wow-offset="10"> <!-- team-member starts -->
 								<figure>
-									<img src="images/Team/team3.jpg" alt="Team 3" class="img-responsive">
+									<img src="<?php echo base_url();  ?>images/Team/team3.jpg" alt="Team 3" class="img-responsive">
 									<figcaption>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis quibusdam nesciunt iure dignis</p>
 									<ul>
@@ -423,7 +423,7 @@
 						<div class="col-md-4"> <!-- col-md-4 starts -->
 							<div class="team-member wow fadeIn" data-wow-offset="10"> <!-- team-member starts -->
 								<figure>
-									<img src="images/Team/team4.jpg" alt="Team 4" class="img-responsive">
+									<img src="<?php echo base_url();  ?>images/Team/team4.jpg" alt="Team 4" class="img-responsive">
 									<figcaption>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis quibusdam nesciunt iure dignis</p>
 									<ul>
@@ -441,7 +441,7 @@
 						<div class="col-md-4"> <!-- col-md-4 starts -->
 							<div class="team-member wow fadeIn" data-wow-offset="10"> <!-- team-member starts -->
 								<figure>
-									<img src="images/Team/team5.jpg" alt="Team 5" class="img-responsive">
+									<img src="<?php echo base_url();  ?>images/Team/team5.jpg" alt="Team 5" class="img-responsive">
 									<figcaption>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis quibusdam nesciunt iure dignis</p>
 									<ul>
@@ -459,7 +459,7 @@
 						<div class="col-md-4"> <!-- col-md-4 starts -->
 							<div class="team-member wow fadeIn" data-wow-offset="10"> <!-- team-member starts -->
 								<figure>
-									<img src="images/Team/team6.jpg" alt="Team 6" class="img-responsive">
+									<img src="<?php echo base_url();  ?>images/Team/team6.jpg" alt="Team 6" class="img-responsive">
 									<figcaption>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis quibusdam nesciunt iure dignis</p>
 									<ul>
@@ -500,7 +500,7 @@
 			<div class="container project-container text-center"><!-- cotainer Starts -->
 					<div class="recent-project-carousel owl-corousel owl-theme popup-gallery"> <!-- recent project starts -->
 						<div class="item recent-project wow fadeIn" data-wow-offset="10"> <!-- item recent starts -->
-							<img src="images/gallery/project-1.jpg" alt="project 1">
+							<img src="<?php echo base_url();  ?>images/gallery/project-1.jpg" alt="project 1">
 							<div class="project-info"> <!-- project info starts -->
 								<h3>Photo Editing</h3>
 								<ul class="project-meta">
@@ -513,7 +513,7 @@
 						</div><!-- item recent ends -->
 
 						<div class="item recent-project wow fadeIn" data-wow-offset="10"> <!-- item recent starts -->
-							<img src="images/gallery/project-2.jpg" titlealt="project 2">
+							<img src="<?php echo base_url();  ?>images/gallery/project-2.jpg" titlealt="project 2">
 							<div class="project-info"> <!-- project info starts -->
 								<h3>Illustrations</h3>
 								<ul class="project-meta">
@@ -526,7 +526,7 @@
 						</div><!-- item recent ends -->
 						
 						<div class="item recent-project wow fadeIn" data-wow-offset="10"> <!-- item recent starts -->
-							<img src="images/gallery/project-3.jpg" alt="project 3">
+							<img src="<?php echo base_url();  ?>images/gallery/project-3.jpg" alt="project 3">
 							<div class="project-info"> <!-- project info starts -->
 								<h3>Web Design</h3>
 								<ul class="project-meta">
@@ -539,7 +539,7 @@
 						</div><!-- item recent ends -->
 
 						<div class="item recent-project wow fadeIn" data-wow-offset="10"> <!-- item recent starts -->
-							<img src="images/gallery/project-4.jpg" alt="project 4">
+							<img src="<?php echo base_url();  ?>images/gallery/project-4.jpg" alt="project 4">
 							<div class="project-info"> <!-- project info starts -->
 								<h3>Article Writing</h3>
 								<ul class="project-meta">
@@ -583,7 +583,7 @@
 			<!-- grid item starts col md 4-->
 			<div class="col-lg-4 col-lg-4 col-sm-4 col-xs-6 gridItem">
 				<figure class="effect-lily">
-					<img src="images/offers/offer-1.jpg" alt="offers">
+					<img src="<?php echo base_url();  ?>images/offers/offer-1.jpg" alt="offers">
 					<figcaption>
 						<div>
 							<h4>Web Development</h4>
@@ -598,7 +598,7 @@
 			<!-- grid item starts col md 4-->
 			<div class="col-lg-4 col-lg-4 col-sm-4 col-xs-6 gridItem">
 				<figure class="effect-lily">
-					<img src="images/offers/offer-2.jpg" alt="offers">
+					<img src="<?php echo base_url();  ?>images/offers/offer-2.jpg" alt="offers">
 					<figcaption>
 						<div>
 							<h4>Article Writing</h4>
@@ -613,7 +613,7 @@
 			<!-- grid item starts col md 4-->
 			<div class="col-lg-4 col-lg-4 col-sm-4 col-xs-6 gridItem">
 				<figure class="effect-lily">
-					<img src="images/offers/offer-3.jpg" alt="offers">
+					<img src="<?php echo base_url();  ?>images/offers/offer-3.jpg" alt="offers">
 					<figcaption>
 						<div>
 							<h4>Photo Editing</h4>
@@ -628,7 +628,7 @@
 			<!-- grid item starts col md 4-->
 			<div class="col-lg-4 col-lg-4 col-sm-4 col-xs-6 gridItem">
 				<figure class="effect-lily">
-					<img src="images/offers/offer-4.jpg" alt="offers">
+					<img src="<?php echo base_url();  ?>images/offers/offer-4.jpg" alt="offers">
 					<figcaption>
 						<div>
 							<h4>Graphic Illustration</h4>
@@ -643,7 +643,7 @@
 			<!-- grid item starts col md 4-->
 			<div class="col-lg-4 col-lg-4 col-sm-4 col-xs-6 gridItem">
 				<figure class="effect-lily">
-					<img src="images/offers/offer-5.jpg" alt="offers">
+					<img src="<?php echo base_url();  ?>images/offers/offer-5.jpg" alt="offers">
 					<figcaption>
 						<div>
 							<h4>Graphic Design</h4>
@@ -659,7 +659,7 @@
 			<!-- grid item starts col md 4-->
 			<div class="col-lg-4 col-lg-4 col-sm-4 col-xs-6 gridItem">
 				<figure class="effect-lily">
-					<img src="images/offers/offer-6.jpg" alt="offers">
+					<img src="<?php echo base_url();  ?>images/offers/offer-6.jpg" alt="offers">
 					<figcaption>
 						<div>
 							<h4>SEO Article</h4>
@@ -691,31 +691,31 @@
 			<div class="row client-slider"><!-- row client starts -->
 				<div class="item col-xs-4 col-md-2 i"><!-- item starts -->
 					<a href="#" title="nokia">
-						<img src="images/clients/nokia-logo.png" class="img-responsive" alt="">
+						<img src="<?php echo base_url();  ?>images/clients/nokia-logo.png" class="img-responsive" alt="">
 					</a>
 				</div><!-- item ends -->
 
 				<div class="item col-xs-4 col-md-2 i"><!-- item starts -->
 					<a href="#" title="lumia">
-						<img src="images/clients/lumia-logo.png" class="img-responsive" alt="">
+						<img src="<?php echo base_url();  ?>images/clients/lumia-logo.png" class="img-responsive" alt="">
 					</a>
 				</div><!-- item ends -->
 
 				<div class="item col-xs-4 col-md-2 i"><!-- item starts -->
 					<a href="#" title="samsung">
-						<img src="images/clients/samsung-logo.png" class="img-responsive" alt="">
+						<img src="<?php echo base_url();  ?>images/clients/samsung-logo.png" class="img-responsive" alt="">
 					</a>
 				</div><!-- item ends -->
 
 				<div class="item col-xs-4 col-md-2 i"><!-- item starts -->
 					<a href="#" title="qmobile">
-						<img src="images/clients/qmobile-logo.png" class="img-responsive" alt="">
+						<img src="<?php echo base_url();  ?>images/clients/qmobile-logo.png" class="img-responsive" alt="">
 					</a>
 				</div><!-- item ends -->
 
 				<div class="item col-xs-4 col-md-2 i"><!-- item starts -->
 					<a href="#" title="microsoft">
-						<img src="images/clients/ms.png" class="img-responsive" alt="">
+						<img src="<?php echo base_url();  ?>images/clients/ms.png" class="img-responsive" alt="">
 					</a>
 				</div><!-- item ends -->
 
@@ -742,7 +742,7 @@
 								<div class="item"> <!-- item starts -->
 								<p class="speech">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt libero dicta deserunt dignissimos aspernatur ab sapiente.</p>
 								<div class="client-info"> <!-- client info starts -->
-									<img src="images/testimonials/reema.jpg">
+									<img src="<?php echo base_url();  ?>images/testimonials/reema.jpg">
 									<h4>Reema Khan</h4>
 									<span>Sarap Industry</span>
 								</div> <!-- client info ends -->
@@ -751,7 +751,7 @@
 								<div class="item"> <!-- item starts -->
 								<p class="speech">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt libero dicta deserunt dignissimos aspernatur ab sapiente.</p>
 								<div class="client-info"> <!-- client info starts -->
-									<img src="images/testimonials/nazia.jpg">
+									<img src="<?php echo base_url();  ?>images/testimonials/nazia.jpg">
 									<h4>Nazia Lodhi</h4>
 									<span>Fuji Coporate</span>
 								</div> <!-- client info ends -->
@@ -760,7 +760,7 @@
 								<div class="item"> <!-- item starts -->
 								<p class="speech">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt libero dicta deserunt dignissimos aspernatur ab sapiente.</p>
 								<div class="client-info"> <!-- client info starts -->
-									<img src="images/testimonials/maya.jpg">
+									<img src="<?php echo base_url();  ?>images/testimonials/maya.jpg">
 									<h4>Maya Shastri</h4>
 									<span>Nirma Industry</span>
 								</div> <!-- client info ends -->
@@ -797,7 +797,7 @@
 
 				<!-- col md 6 starts -->
 				<div class="col-md-6 wow slideInRight" data-wow-offset="10">
-					<img src="images/design.jpg" class="img-responsive" alt="">
+					<img src="<?php echo base_url();  ?>images/design.jpg" class="img-responsive" alt="">
 				</div>
 				<!-- col md 6 ends -->
 			</div>
@@ -904,28 +904,28 @@
 			<!-- col md 8 starts -->
 				<div class="col-md-8 contact-form">
 					<h3>Drop us a line</h3>
-					<form id="ContactForm" action="">
+					<form id="ContactForm" method="POST"action="<?php echo base_url(); ?>Welcome/submitForm">
 
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Name" required>
+							<input type="text" class="form-control" placeholder="Your Name" name="fname"required>
 						</div>
 
 						<div class="form-group">
-							<input type="email" class="form-control" placeholder="Your Email" required>
+							<input type="email" class="form-control" placeholder="Your Email" name="femail"required>
 						</div>
 
 						<div class="form-group">
-							<input type="phone" class="form-control" placeholder="Your Phone" required>
+							<input type="phone" class="form-control" placeholder="Your Phone" name="fphone"required>
 						</div>
 
 						<div class="form-group">
-							<textarea class="form-control" rows="4" placeholder="Your Message..." required>
+							<textarea class="form-control" rows="4" placeholder="Your Message..." name="fmessage" required>
 								
 							</textarea>
 						</div>
 
 						<div class="form-group">
-							<button type="submit" class="btn btn-default"><i class="fa fa-paper-plane fa-fw"></i>
+							<button type="submit" class="btn btn-default"><i class="fa fa-paper-plane fa-fw" value="submit"></i>
 								SEND
 							</button>
 						</div>
@@ -970,7 +970,7 @@
 			<div class="col-md-12 segment">
 				<a href="#" title="siliwangidev - Html 5 Template">
 					<h2>
-						<img src="images/logo.svg" alt="siliwangidev" width="100" class="img-responsive">
+						<img src="<?php echo base_url();  ?>images/logo.svg" alt="siliwangidev" width="100" class="img-responsive">
 					</h2>
 				</a>
 				<p class="white">We believe in Fast Creative Flexible Design</p>
@@ -1019,19 +1019,19 @@
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/jquery/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/superslides/jquery.superslides.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/menu.js"></script>
-	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
-	<script src="js/plugin/wow.min.js"></script>
-	<script src="js/plugin/owl.carousel.min.js"></script>
-	<script src="js/plugin/jquery.magnific-popup.min.js"></script>
-	<script src="js/plugin/nivo-lightbox.min.js"></script>
-	<script src="js/plugin/jquery.countTo.js"></script>
-	<script src="js/plugin/jquery.inview.min.js"></script>
-	<script src="js/plugin/jquery.easing.min.js"></script>
+    <script src="<?php echo base_url();  ?>js/jquery/jquery.js"></script>
+    <script src="<?php echo base_url();  ?>js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url();  ?>js/superslides/jquery.superslides.js"></script>
+	<script src="<?php echo base_url();  ?>js/script.js"></script>
+	<script src="<?php echo base_url();  ?>js/menu.js"></script>
+	<script src="<?php echo base_url();  ?>js/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="<?php echo base_url();  ?>js/plugin/wow.min.js"></script>
+	<script src="<?php echo base_url();  ?>js/plugin/owl.carousel.min.js"></script>
+	<script src="<?php echo base_url();  ?>js/plugin/jquery.magnific-popup.min.js"></script>
+	<script src="<?php echo base_url();  ?>js/plugin/nivo-lightbox.min.js"></script>
+	<script src="<?php echo base_url();  ?>js/plugin/jquery.countTo.js"></script>
+	<script src="<?php echo base_url();  ?>js/plugin/jquery.inview.min.js"></script>
+	<script src="<?php echo base_url();  ?>js/plugin/jquery.easing.min.js"></script>
 
 	
     
