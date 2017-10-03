@@ -26,7 +26,6 @@ class Welcome extends CI_Controller {
 	public function submitForm(){
 		$this->form_validation->set_rules('fname', 'Username', 'required',array('required'=>'Please Fill Your name'));
 	 	$this->form_validation->set_rules('pass', 'Password', 'required',array('required'=>'Please Fill Password'));
-	 	$this->form_validation->set_rules
 
 	}
 
