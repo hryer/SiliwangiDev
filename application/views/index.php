@@ -28,10 +28,10 @@
     <link rel="stylesheet" href="<?php echo base_url();  ?>css/plugin/magnific-popup.css">
     <link rel="stylesheet" href="<?php echo base_url();  ?>css/plugin/nivo-lightbox.css">
     <link rel="stylesheet" href="<?php echo base_url();  ?>css/themes/default/default.css">
-	
 	<!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:100,600' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='<?php echo base_url();  ?>fonts/railway.css' rel='stylesheet' type='text/css'>
+    <link href='<?php echo base_url();  ?>fonts/open-sans.css' rel='stylesheet' type='text/css'>
+	
 
    
   </head>
@@ -419,65 +419,6 @@
 						</div> <!-- col-md-4 ends -->
 
 					</div> <!-- row ends -->
-					<div class="row"> <!-- row starts -->
-						<div class="col-md-4"> <!-- col-md-4 starts -->
-							<div class="team-member wow fadeIn" data-wow-offset="10"> <!-- team-member starts -->
-								<figure>
-									<img src="<?php echo base_url();  ?>images/Team/team4.jpg" alt="Team 4" class="img-responsive">
-									<figcaption>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis quibusdam nesciunt iure dignis</p>
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
-										<li><a href="#"><i class="fa fa-github-square fa-2x"></i></a></li>
-									</ul>
-									</figcaption>
-								</figure>
-								<h4>HaEr</h4>
-								<p>Designer</p>
-							</div> <!-- team-member ends -->
-						</div> <!-- col-md-4 ends -->
-						<div class="col-md-4"> <!-- col-md-4 starts -->
-							<div class="team-member wow fadeIn" data-wow-offset="10"> <!-- team-member starts -->
-								<figure>
-									<img src="<?php echo base_url();  ?>images/Team/team5.jpg" alt="Team 5" class="img-responsive">
-									<figcaption>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis quibusdam nesciunt iure dignis</p>
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
-										<li><a href="#"><i class="fa fa-github-square fa-2x"></i></a></li>
-									</ul>
-									</figcaption>
-								</figure>
-								<h4>Harma Erry</h4>
-								<p>Photo Editing</p>
-							</div> <!-- team-member ends -->
-						</div> <!-- col-md-4 ends -->
-						<div class="col-md-4"> <!-- col-md-4 starts -->
-							<div class="team-member wow fadeIn" data-wow-offset="10"> <!-- team-member starts -->
-								<figure>
-									<img src="<?php echo base_url();  ?>images/Team/team6.jpg" alt="Team 6" class="img-responsive">
-									<figcaption>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis quibusdam nesciunt iure dignis</p>
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
-										<li><a href="#"><i class="fa fa-github-square fa-2x"></i></a></li>
-										
-									</ul>
-									</figcaption>
-								</figure>
-								<h4>Harry Er</h4>
-								<p>Illustration</p>
-							</div> <!-- team-member ends -->
-						</div> <!-- col-md-4 ends -->
-
-					</div> <!-- row ends -->
-
 				</div> <!-- col-md-12 ends -->
 			</div><!-- Row Ends -->
 		</div><!-- Container Ends -->
@@ -954,9 +895,9 @@
 		<!-- container ends -->
 		
 		<!-- map starts -->
-			<div id="map">
+			<!-- <div id="map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1342.9033263385195!2d106.78251116995943!3d-6.2016493213635915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x220f18a3284393cb!2sKost+Mandala!5e0!3m2!1sen!2sid!4v1503849105362" width=100% height=100% frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
+			</div> -->
 		<!-- map ends --	>
 
 	</section>
