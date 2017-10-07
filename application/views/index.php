@@ -845,7 +845,7 @@
 			<!-- col md 8 starts -->
 				<div class="col-md-8 contact-form">
 					<h3>Drop us a line</h3>
-					<form id="ContactForm" method="POST"action="<?php echo base_url(); ?>Welcome/submitForm">
+					<form id="ContactForm" method="POST"action="<?php echo base_url(); ?>home/submitForm">
 
 						<div class="form-group">
 							<input type="text" class="form-control" placeholder="Your Name" name="fname"required>
@@ -860,7 +860,7 @@
 						</div>
 
 						<div class="form-group">
-							<textarea class="form-control" rows="4" placeholder="Your Message..." name="fmessage" required>
+							<textarea class="form-control" rows="4" placeholder="Your Message..." name="fmessage" >
 								
 							</textarea>
 						</div>
