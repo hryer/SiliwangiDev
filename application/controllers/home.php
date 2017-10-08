@@ -5,7 +5,7 @@ class Home extends CI_Controller{
 	public function __construct(){
 		parent::__construct();
 		$this->load->library('form_validation');
-		$this->load->library('session');
+		$this->load->model('mess_mod');
 	}
 		
 	public function index(){
@@ -21,6 +21,21 @@ class Home extends CI_Controller{
 	 	if($this->form_validation->run()==false){
 	 		$this->load->view("fail");
 	 	}else{
+
+	 		$name = $this->input->post('fname');
+            $email = $this->input->post('femail');
+            $phone = $this->input->post('fphone');
+            $message = $this->input->post('fmessage');
+
+            $data = array(
+                        'name' => $name,
+                    	'email' => $email,
+                    	'phone' => $phone,
+                    	'description' => $message  
+                    );
+
+            $this->mess_mod->insert_message($data,'message_tbl');
+
 	 		$this->load->view("thanks");
 	 	}
 
