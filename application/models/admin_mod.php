@@ -11,7 +11,7 @@
 		}
 
 		public function checkAdmin($username,$password){
-			$sql = "SELECT * FROM admin_tbl WHERE username='" . $username . "'and password='" . $password;
+			$sql = "SELECT * FROM admin_tbl WHERE username='" . $username . "'and password='" . md5($password) . "'";
 			$result = $this->db->query($sql);
 
 			return ($result->num_rows());
