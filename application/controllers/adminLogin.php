@@ -13,7 +13,7 @@
 		}
 
 		public function index(){
-			$this->load->view("admin/LoginAdmin.php");
+			$this->load->view("admin/login.php");
 		}
 
 		public function loginSubmit(){
@@ -23,7 +23,7 @@
 	 		
 
 	 		if($this->form_validation->run()==false){
-	 			$this->load->view("index");
+	 			$this->load->view("fail");
 	 		}else{
 	 		// $_POST["username"]=="admin" && $_POST["pass"]=="123"
 	 			if($this->Admin_mod->checkAdmin($_POST["username"],$_POST["pass"])>0){
@@ -31,7 +31,7 @@
 	 				redirect(base_url() . "AdminMain");
 	 			}else{
 	 				$data["loginerror"]="Username & Password wrong";
-	 				$this->load->view("admin/LoginAdmin",$data);
+	 				$this->load->view("admin/login",$data);
 	 			}
 	 		}
 		}
