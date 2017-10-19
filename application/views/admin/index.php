@@ -1,3 +1,8 @@
+<?php 
+  if(!$this->session->has_userdata('username')){
+    redirect(base_url() . "AdminLogin");
+  }
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,9 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CMS SiliwangiDev</title>
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>css/admin-style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -27,11 +32,11 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Dashboard <span class="sr-only">(current)</span></a></li>
-        <li><a href="messages.html">Messages</a></li>
-        <li><a href="pages.html">Projects</a></li>
-        <li><a href="catagories.html">Categories</a></li>
-        <li><a href="users.html">Users</a></li>
+        <li class="active"><a href="<?php echo base_url(); ?>adminMain">Dashboard <span class="sr-only">(current)</span></a></li>
+        <li><a href="<?php echo base_url(); ?>adminMain/message">Messages</a></li>
+        <li><a href="<?php echo base_url(); ?>adminProjects">Projects</a></li>
+        <li><a href="<?php echo base_url(); ?>adminCategories">Categories</a></li>
+        <li><a href="<?php echo base_url(); ?>adminUsers">Users</a></li>
        
       </ul>
      
@@ -68,48 +73,24 @@
             <hr>
             <h3 class="text-primary">Lastest Project</h3> 
             <table class="table table-striped">
+            <thead>
               <tr class="text-info">
                 <th>Project Title</th>
                 <th>Category</th>
                 <th>Author</th>
                 <th>Description</th>
               </tr>
-              <tr>
-                <td><a href="#">Sample Project One</a></td>
-                <td>Web Design</td>
-                <td>Harry Ermawan</td>
-                <td>Created with Bootstrap</td>
-              </tr>
-               <tr>
-                <td><a href="#">Sample Project Two</a></td>
-                <td>Web Design</td>
-                <td>Harry Ermawan</td>
-                <td>Created with Bootstrap</td>
-              </tr>
-               <tr>
-                <td><a href="#">Sample Project Three</a></td>
-                <td>Web Design</td>
-                <td>Harry Ermawan</td>
-                <td>Created with Bootstrap</td>
-              </tr>
-               <tr>
-                <td><a href="#">Sample Project Four</a></td>
-                <td>Web Design</td>
-                <td>Harry Ermawan</td>
-                <td>Created with Bootstrap</td>
-              </tr>
-               <tr>
-                <td><a href="#">Sample Project Five</a></td>
-                <td>Web Design</td>
-                <td>Harry Ermawan</td>
-                <td>Created with Bootstrap</td>
-              </tr>
-               <tr>
-                <td><a href="#">Sample Project Six</a></td>
-                <td>Web Design</td>
-                <td>Harry Ermawan</td>
-                <td>Created with Bootstrap</td>
-              </tr>
+            </thead>
+            <tbody>
+              <?php foreach($projects_data as $rows){ ?>
+                <tr>
+                  <td><a href="#"><?php echo $rows['title']; ?></a></td>
+                  <td><?php echo $rows['category']; ?></td>
+                  <td><?php echo $rows['author']; ?></td>
+                  <td><?php echo $rows['description']; ?></td>
+                </tr>
+              <?php } ?>
+            </tbody>
 
             </table>
             <a href="pages.html" class="btn btn-default">View All Projects</a>
@@ -118,27 +99,24 @@
             <h3 class="text-primary">Lastest Users</h3>
 
             <table class="table table-striped">
+            <thead>
               <tr class="text-info">
                 <th>Name</th>
-                <th>Email </th>
+                <th>Username </th>
                 <th>Group</th>
               </tr>
+            </thead>
+            <tbody>
+            <?php foreach($admins_data as $rows){ ?>
                <tr>
-                <td><a href="#">Harry Ermawan</a></td>
-                <td>harryermawan@siliwangidev.com</td>
-                <td>admin</td>
+                <td><a href="#"><?php echo $rows['name']; ?></a></td>
+                <td><?php echo $rows['username']; ?></td>
+                <td><?php echo $rows['role']; ?></td>
               </tr>
-              <tr>
-                <td><a href="#">Titus Efferian</a></td>
-                <td>kiritokiritoan@mail.com</td>
-                <td>admin</td>
-              </tr>
-              <tr>
-                <td><a href="#">Shem lim</a></td>
-                <td>liemlien@siliwangidev.com</td>
-                <td>admin</td>
-              </tr>
+            <?php } ?>
+            </tbody>
             </table>
+
             <a href="users.html" class="btn btn-default">View All Users</a>
           </div>
         </div>
@@ -154,7 +132,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/main.js"></script>
+    <script src="<?php echo base_url(); ?>js/bootstrap.js"></script>
   </body>
 </html>

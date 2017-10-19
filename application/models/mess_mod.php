@@ -7,7 +7,7 @@
 			$this->load->database();
 		}
 
-		public function readMessage($limit=0){
+		public function getMessage($limit=0){
 			if($limit>0){
 				$sql = "SELECT * FROM message_tbl ORDER BY id DESC LIMIT " . $limit;
 			}else{
