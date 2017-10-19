@@ -34,7 +34,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="<?php echo base_url(); ?>adminMain">Dashboard <span class="sr-only">(current)</span></a></li>
         <li><a href="<?php echo base_url(); ?>adminMain/message">Messages</a></li>
-        <li><a href="<?php echo base_url(); ?>adminProjects">Projects</a></li>
+        <li><a href="<?php echo base_url(); ?>adminProject">Projects</a></li>
         <li><a href="<?php echo base_url(); ?>adminCategories">Categories</a></li>
         <li><a href="<?php echo base_url(); ?>adminUsers">Users</a></li>
        

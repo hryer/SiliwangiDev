@@ -1,3 +1,8 @@
+<?php 
+  if(!$this->session->has_userdata('username')){
+    redirect(base_url() . "AdminLogin");
+  }
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +14,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/admin-style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -27,12 +32,11 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav">
-        <li><a href="index.html">Dashboard <span class="sr-only">(current)</span></a></li>
-        <li><a href="messages.html">Messages</a></li>
-        <li class="active"><a href="pages.html">Projects</a></li>
-        <li><a href="catagories.html">Categories</a></li>
-        <li><a href="users.html">Users</a></li>
-       
+        <li><a href="<?php echo base_url(); ?>adminMain">Dashboard <span class="sr-only">(current)</span></a></li>
+        <li><a href="<?php echo base_url(); ?>adminMain/message">Messages</a></li>
+        <li class="active"><a href="<?php echo base_url(); ?>adminProject">Projects</a></li>
+        <li><a href="<?php echo base_url(); ?>adminCategories">Categories</a></li>
+        <li><a href="<?php echo base_url(); ?>adminUsers">Users</a></li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
           <input type="text" class="form-control col-lg-8 search-form" placeholder="Search">
@@ -72,7 +76,7 @@
                 </div>
               <div class="col-md-6">
                 <div class="btn-group actions" role="group" aria-label="...">
-                  <a class="btn btn-default" href="#"><i class="glyphicon    glyphicon-plus"></i> New</a>
+                  <a class="btn btn-default" href="<?php echo base_url(); ?>AdminProject/addProject"><i class="glyphicon    glyphicon-plus"></i> New</a>
                   <a class="btn btn-default" href="#"><i class="glyphicon    glyphicon-pencil"></i> Edit</a>
                   <a class="btn btn-default" href="#"><i class="glyphicon    glyphicon-remove"></i> Delete</a>
                 </div>
@@ -96,94 +100,17 @@
               </tr>
               </thead>
               <tbody>
+              <?php foreach($projects_data as $rows){ ?>
               <tr>
-                <td><input type="checkbox"></td>
-                <td><a href="page.html">Sample Project One</a></td>
-                <td>Web Design</td>
-                <td>Harry Ermawan</td>
-                <td>Created with Bootstrap</td>
-                <td>CreatedwithBootstrap.jpg</td>
+                <td><input type="checkbox" value="<?php echo $rows['id']; ?>"></td>
+                <td><a href="page.html"><?php echo $rows['title']; ?></a></td>
+                <td><?php echo $rows['category']; ?></td>
+                <td><?php echo $rows['author']; ?></td>
+                <td><?php echo $rows['description']; ?></td>
+                <td><?php echo $rows['image']; ?></td>
               </tr>
-               <tr>
-                <td><input type="checkbox"></td>
-                <td><a href="page.html">Sample Project Two</a></td>
-                <td>Web Design</td>
-                <td>Harry Ermawan</td>
-                <td>Created with Bootstrap</td>
-                <td>CreatedwithBootstrap.jpg</td>
-              </tr>
-               <tr>
-                <td><input type="checkbox"></td>
-                <td><a href="page.html">Sample Project Three</a></td>
-                <td>Web Design</td>
-                <td>Harry Ermawan</td>
-                <td>Created with Bootstrap</td>
-                <td>CreatedwithBootstrap.jpg</td>
-              </tr>
-               <tr>
-                <td><input type="checkbox"></td>
-                <td><a href="page.html">Sample Project Four</a></td>
-                <td>Web Design</td>
-                <td>Harry Ermawan</td>
-                <td>Created with Bootstrap</td>
-                <td>CreatedwithBootstrap.jpg</td>
-              </tr>
-               <tr>
-                <td><input type="checkbox"></td>
-                <td><a href="page.html">Sample Project Five</a></td>
-                <td>Web Design</td>
-                <td>Harry Ermawan</td>
-                <td>Created with Bootstrap</td>
-                <td>CreatedwithBootstrap.jpg</td>
-              </tr>
-               <tr>
-               <td><input type="checkbox"></td>
-                <td><a href="page.html">Sample Project Six</a></td>
-                <td>Web Design</td>
-                <td>Harry Ermawan</td>
-                <td>Created with Bootstrap</td>
-                <td>CreatedwithBootstrap.jpg</td>
-              </tr>
-              <tr>
-              <td><input type="checkbox"></td>
-                <td><a href="page.html">Sample Project Seven</a></td>
-                <td>Web Programming</td>
-                <td>Harry Efferian</td>
-                <td>Created with React</td>
-                <td>CreatedwithBootstrap.jpg</td>
-              </tr>
-              <tr>
-              <td><input type="checkbox"></td>
-                <td><a href="page.html">Sample Project Eight</a></td>
-                <td>Web Design</td>
-                <td>Harry Lim</td>
-                <td>Created with Angular</td>
-                <td>CreatedwithBootstrap.jpg</td>
-              </tr>
-              <tr>
-              <td><input type="checkbox"></td>
-                <td><a href="page.html">Sample Project Nine</a></td>
-                <td>Web Design</td>
-                <td>Harry Ermawan</td>
-                <td>Created with Bootstrap</td>
-                <td>CreatedwithBootstrap.jpg</td>
-              </tr>
-              <tr>
-              <td><input type="checkbox"></td>
-                <td><a href="page.html">Sample Project Ten</a></td>
-                <td>Web Programming</td>
-                <td>MEthod thod thod</td>
-                <td>Created with Laravel</td>
-                <td>CreatedwithBootstrap.jpg</td>
-              </tr>
-              <tr>
-              <td><input type="checkbox"></td>
-                <td><a href="page.html">Sample Project Eleven</a></td>
-                <td>Web Programming</td>
-                <td>Samuel Ermawan</td>
-                <td>Created with Code Igniter</td>
-                <td>CreatedwithBootstrap.jpg</td>
-              </tr>
+              <?php } ?>
+               
 
               </tbody>
             </table>
@@ -222,9 +149,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="<?php echo base_url(); ?>js/bootstrap.js"></script>
+    <script src="<?php echo base_url(); ?>js/jquery.tablesorter.min.js"></script>
 
     <script>
       $(function(){

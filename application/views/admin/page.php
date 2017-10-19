@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CMS SiliwangiDev</title>
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>css/admin-style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -76,50 +76,11 @@
 
             </ol>
 
-            <fieldset>
-              <legend><h2>Form Adding Project</h2></legend>
-
-               <form action="#" method="post" enctype="#">
-                
-                <div class="form-group">
-                  <label>Project Title</label>
-                  <input type="text" class="form-control" placeholder=" Your Project name">
-                </div>
-
-                <div class="form-group">
-                  <label>Category</label>
-                  <select class="form-control">
-                    <option value="1">Category One</option>
-                    <option value="2">Category Two</option>
-                    <option value="3">Category Three</option>
-                   <option value="4">Category Four</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label>Project Author</label>
-                  <input type="text" class="form-control" placeholder="Your Project author">
-                </div>
-
-
-                <div class="form-group">
-                  <label>Project Description</label>
-                  <textarea class="form-control" placeholder="  Description"></textarea>
-                </div>
-
-                <div class="form-group">
-                  <label for="project_image">Project Image </label>
-                  <input type="FILE" name="project_image" id="project_image" value="Choose File" required>
-                  <p class="text-muted">Max Size: 3MB</p>
-                </div>
-
-
-               </form>
-              
-              
-              <button type="submit" class="btn btn-primary">Submit</button>
-
-            </fieldset> <br>
+             <?php 
+            if (isset($content_page)) {
+              $this->load->view("admin/" . $content_page);
+            }
+          ?>
 
           </div>
          
@@ -137,8 +98,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/main.js"></script>
+    <script src="<?php echo base_url(); ?>js/bootstrap.js"></script>
   
     
   </body>

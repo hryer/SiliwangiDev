@@ -14,8 +14,8 @@
 	 }
 	 
 	 public function index() {
-		$data["products_data"]=$this->project_mod->getProjects(0);
-		$this->load->view("admin/page",$data); 
+		$data["projects_data"]=$this->project_mod->getProjects(0);
+		$this->load->view("admin/pages",$data); 
 	 }
 	 
 	 public function addProject() {
@@ -68,6 +68,12 @@
 
 	 }
 
+	 function delete_multiple(){
+	 	$this->project_mod->remove_checked_project();
+	 	redirect(base_url() . "adminProject");
+	 }
+
+
 	 public function editProjectSubmit(){
 	 	$title = $_POST["title"];
 	 	$category = $_POST["category"];
@@ -84,17 +90,9 @@
 	 		}
 	 	}
 
-	 	$sql = "UPDATE project_tbl SET name='" . $name . "',
-	 									category='" . $category . "', 
-	 									author='" . $author . "', 
-	 									description='" . $description . "', 
-	 									image='" . $gambar . "' 
-	 									WHERE id =" . $id ;
+	 	$this->project_mod->editProject($name,$category,$author,$description,$gambar,$id);
 
-
-
-	 	  $query = $this->db->query($sql);
-
-	 	  redirect(base_url() . "AdminProject");
+	 	redirect(base_url() . "adminProject");
+	 	
 	 }
  }

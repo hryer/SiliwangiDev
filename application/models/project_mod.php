@@ -1,10 +1,23 @@
 <?php 
 	
-	class Projects_mod extends CI_Model{
+	class Project_mod extends CI_Model{
+		
 		public function __construct(){
 			parent::__construct();
 			$this->load->database();
 		}
+
+		public function remove_checked_project(){
+			$action = $this->input->post('action');
+			if($action == "delete"){
+				$delete = $this->input->post('msg');
+				for($i=0;$i<count($delete);$i++){
+					$this->db->where('id',$delete[$i]);
+					$this->db->delete('projects_tbl');
+				}
+			}
+		}
+
 
 		public function getProjects($limit=0){
 			if($limit>0){
@@ -47,6 +60,22 @@
 				$result=$rows->gambar;
 			}
 			return $result;
+		}
+
+		public function editProject($name,$category,$author,$description,$gambar,$id){
+			$sql = "UPDATE project_tbl SET name='" . $name . "',
+	 									category='" . $category . "', 
+	 									author='" . $author . "', 
+	 									description='" . $description . "', 
+	 									image='" . $gambar . "' 
+	 									WHERE id =" . $id ;
+
+
+
+	 	  $query = $this->db->query($sql);
+
+	 	  redirect(base_url() . "AdminProject");
+
 		}
 	}
 
