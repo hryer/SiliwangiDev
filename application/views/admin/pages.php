@@ -69,6 +69,8 @@
               <li class="list-group-item"><i class="glyphicon glyphicon-user"> </i> User Accounts</li>
             </ul>
           </div>
+
+          <form method="post" name="frm">
           <div class="col-md-8">
             <div class="row">
               <div class="col-md-6">
@@ -77,8 +79,8 @@
               <div class="col-md-6">
                 <div class="btn-group actions" role="group" aria-label="...">
                   <a class="btn btn-default" href="<?php echo base_url(); ?>AdminProject/addProject"><i class="glyphicon    glyphicon-plus"></i> New</a>
-                  <a class="btn btn-default" href="#"><i class="glyphicon    glyphicon-pencil"></i> Edit</a>
-                  <a class="btn btn-default" href="#"><i class="glyphicon    glyphicon-remove"></i> Delete</a>
+                  <a class="btn btn-default" onClick="edit_records();"><i class="glyphicon    glyphicon-pencil"></i> Edit</a>
+                  <a class="btn btn-default" onClick="delete_records();"><i class="glyphicon    glyphicon-remove"></i> Delete</a>
                 </div>
               </div>
             </div>
@@ -102,7 +104,7 @@
               <tbody>
               <?php foreach($projects_data as $rows){ ?>
               <tr>
-                <td><input type="checkbox" value="<?php echo $rows['id']; ?>"></td>
+                <td><input type="checkbox" name="chk[]" class="chk-box" value="<?php echo $rows['id']; ?>"  ></td>
                 <td><a href="page.html"><?php echo $rows['title']; ?></a></td>
                 <td><?php echo $rows['category']; ?></td>
                 <td><?php echo $rows['author']; ?></td>
@@ -114,6 +116,7 @@
 
               </tbody>
             </table>
+            </form>
 
               <nav aria-label="Page navigation">
               <ul class="pagination">
@@ -169,6 +172,34 @@
           return !~text.indexOf(val);
         }).hide();
       });
+    </script>
+
+    <script>
+      $('document').ready(function(){
+        $(".select-all").click(function(){
+          $('.chk-box').attr('checked',this.checked)
+        });
+
+        $(".chk-box").click(function(){
+          if($(".chk-box").length == $(".chk-box:checked").length){
+            $(".select-all").attr("checked","checked");
+          }else{
+            $(".select-all").removeAttr("checked");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      function edit_records(){
+        document.frm.action = "<?php echo base_url(); ?>adminProject/edit_mul";
+        document.frm.submit();
+      }
+
+      function delete_records(){
+        document.frm.action = "<?php echo base_url(); ?>adminProject/delete_mul";
+        document.frm.submit();
+      }
     </script>
     
   </body>

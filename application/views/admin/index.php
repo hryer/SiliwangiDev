@@ -93,7 +93,7 @@
             </tbody>
 
             </table>
-            <a href="pages.html" class="btn btn-default">View All Projects</a>
+            <a href="<?php echo base_url(); ?>adminProject" class="btn btn-default">View All Projects</a>
             <hr>
             
             <h3 class="text-primary">Lastest Users</h3>

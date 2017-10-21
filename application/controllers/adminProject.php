@@ -65,16 +65,52 @@
 	 		unlink($gambar);
 	 	}
 
-	 	$sql = "DELETE FROM project_tbl WHERE id=" . $id;
+	 	$sql = "DELETE FROM projects_tbl WHERE id=" . $id;
 	 	$query = $this->db->query($sql);
 
 	 	redirect(base_url() . "adminProject");
 
 	 }
 
-	 function delete_multiple(){
-	 	$this->project_mod->remove_checked_project();
-	 	redirect(base_url() . "adminProject");
+	 function delete_mul(){
+	 	error_reporting(0);
+
+	 	$chk = $_POST['chk'];
+	 	$chkcount = count($chk);
+
+	 	if(!isset($chk)){
+	 		?>
+	 		<script>
+	 			alert('At least one checkbox Must be Selected !!!');
+	 			windows.location.href = '<?php echo base_url(); ?>adminProject';
+	 		</script>
+	 		<?php 
+	 	}else{
+	 		for($i=0;$i<$chkcount;$i++){
+	 			$del = $chk[$i];
+	 			$sql = "DELETE FROM projects_tbl WHERE id=".$del;
+	 			$this->db->query($sql);
+	 		}
+	 	}
+
+	 	if($sql)
+		{
+			?>
+			<script>
+			alert('<?php echo $chkcount; ?> Records Was Deleted !!!');
+			window.location.href='<?php echo base_url(); ?>adminProject';
+			</script>
+			<?php
+		}
+		else
+		{
+			?>
+			<script>
+			alert('Error while Deleting , TRY AGAIN');
+			window.location.href='<?php echo base_url(); ?>adminProject';
+			</script>
+			<?php
+		}
 	 }
 
 
