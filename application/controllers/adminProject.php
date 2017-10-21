@@ -5,7 +5,7 @@
 		parent::__construct();
 		$this->load->library("session");
 		$this->load->model("project_mod"); 
-		$uploadconfig["upload_path"]="./images/product/";
+		$uploadconfig["upload_path"]="./images/projects/";
 		$uploadconfig["allowed_types"]="gif|jpg|png";
 		$uploadconfig["max_size"]=10240;
 		$this->load->library("upload",$uploadconfig);
@@ -29,16 +29,20 @@
 	 	$author = $_POST["author"];
 	 	$description = $_POST["description"];
 	 	$link = $_POST["link"];
-	 	$gambar = "";
+	 	$gambar = "s";
+	 	
+			// echo $gambar;
+	 	// 	exit(0);
 
 	 	if($this->upload->do_upload("gambar")){
-	 		$gambar=$this->upload->file_name;
+	 		$gambar=$this->upload->data('file_name'); 
+	 		// echo $gambar;
+	 		// exit(0);
+	 		$this->project_mod->insert_project($title,$category,$author,$description,$gambar,$link);
+	 		
 	 	}
 
-	 	$sql = "INSERT INTO project_tbl(title,category,author,description,image,link) 
-	 	        VALUES('" . $title . "','" . $category . "','" . $author . "','" . $description . "','" . $gambar . "','" . $link . "')" ;
-
-	 	$query = $this->db->query($sql);
+	 	
 
 	 	redirect(base_url() . "AdminProject");
 	 }

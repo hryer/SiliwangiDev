@@ -18,6 +18,12 @@
 			}
 		}
 
+		public function insert_project($title,$category,$author,$description,$image,$link){
+			$sql = "INSERT INTO projects_tbl(title,category,author,description,image,link) 
+	 	        VALUES('" . $title . "','" . $category . "','" . $author . "','" . $description . "','" . $image . "','" . $link . "')" ;
+
+	 		$query = $this->db->query($sql);
+		}
 
 		public function getProjects($limit=0){
 			if($limit>0){
