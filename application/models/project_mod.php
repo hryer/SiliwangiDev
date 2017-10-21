@@ -68,12 +68,13 @@
 			return $result;
 		}
 
-		public function editProject($name,$category,$author,$description,$gambar,$id){
-			$sql = "UPDATE project_tbl SET name='" . $name . "',
+		public function editProject($title,$category,$author,$description,$gambar,$link,$id){
+			$sql ="UPDATE project_tbl SET title='" . $title . "',
 	 									category='" . $category . "', 
 	 									author='" . $author . "', 
 	 									description='" . $description . "', 
-	 									image='" . $gambar . "' 
+	 									image='" . $gambar . "'
+	 									link='" . $link . "' 
 	 									WHERE id =" . $id ;
 
 

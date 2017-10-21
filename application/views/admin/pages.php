@@ -86,7 +86,7 @@
             </div>
             <hr>
             <ol class="breadcrumb">
-              <li><a href="index.html">Dashboard</a></li>
+              <li><a href="<?php echo base_url(); ?>adminMain">Dashboard</a></li>
               <li class="active">Projects</li>
             </ol>
 
@@ -95,10 +95,10 @@
               <tr class="text-info">
                 <th><input type="checkbox"></th>
                 <th>Project Title   <i class="glyphicon    glyphicon-chevron-down"></i>  </th>
-                <th>Category   <i class="glyphicon    glyphicon-chevron-down"></i>  </th>
+                <th>Category <i class="glyphicon glyphicon-chevron-down"></i> </th>
                 <th>Author   <i class="glyphicon    glyphicon-chevron-down"></i>  </th>
                 <th>Description   <i class="glyphicon    glyphicon-chevron-down"></i>  </th>
-                  <th>Image   <i class="glyphicon    glyphicon-chevron-down"></i>  </th>
+                  
               </tr>
               </thead>
               <tbody>
@@ -108,8 +108,15 @@
                 <td><a href="page.html"><?php echo $rows['title']; ?></a></td>
                 <td><?php echo $rows['category']; ?></td>
                 <td><?php echo $rows['author']; ?></td>
-                <td><?php echo $rows['description']; ?></td>
-                <td><?php echo $rows['image']; ?></td>
+                <td><?php if(strlen($rows['description']) > 25){
+                   $rdesc = substr($rows['description'],0,25);
+                   echo $rdesc; 
+                }else{
+                  echo $rows['description'];
+                }
+                ?>
+                     </td>
+               
               </tr>
               <?php } ?>
                
@@ -192,7 +199,7 @@
 
     <script>
       function edit_records(){
-        document.frm.action = "<?php echo base_url(); ?>adminProject/edit_mul";
+        document.frm.action = "<?php echo base_url(); ?>adminProject/editProject";
         document.frm.submit();
       }
 

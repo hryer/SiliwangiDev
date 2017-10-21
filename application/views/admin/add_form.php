@@ -1,4 +1,15 @@
-<fieldset>
+            <div class="col-md-8">
+              <h1 class="page-header text-primary"><i class="glyphicon    glyphicon-file"></i> Add Projects</h1> 
+              <hr>
+            
+            <ol class="breadcrumb">
+              <li><a href="<?php echo base_url(); ?>adminMain">Dashboard</a></li>
+              <li><a href="<?php echo base_url(); ?>adminProject">Projects</a></li>
+              <li class="active">Add Projects</li>
+
+            </ol>
+
+            <fieldset>
               <legend><h2>Form Adding Project</h2></legend>
 
                <form action="<?php echo base_url(); ?>AdminProject/addProjectSubmit" method="post" enctype="multipart/form-data">

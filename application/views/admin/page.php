@@ -1,4 +1,9 @@
-
+<?php 
+  if(!$this->session->has_userdata('username')){
+    redirect(base_url() . "AdminLogin");
+  }
+ ?>
+ 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -65,16 +70,7 @@
               <li class="list-group-item"><i class="glyphicon glyphicon-user"> </i> User Accounts</li>
             </ul>
           </div>
-          <div class="col-md-8">
-            <h1 class="page-header text-primary"><i class="glyphicon    glyphicon-file"></i> Add Projects</h1> 
-            <hr>
-            
-            <ol class="breadcrumb">
-              <li><a href="index.html">Dashboard</a></li>
-              <li><a href="pages.html">Projects</a></li>
-              <li class="active">Add Projects</li>
-
-            </ol>
+         
 
              <?php 
             if (isset($content_page)) {

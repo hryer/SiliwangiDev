@@ -29,7 +29,7 @@
 	 	$author = $_POST["author"];
 	 	$description = $_POST["description"];
 	 	$link = $_POST["link"];
-	 	$gambar = "s";
+	 	$gambar = "";
 	 	
 			// echo $gambar;
 	 	// 	exit(0);
@@ -40,6 +40,8 @@
 	 		// exit(0);
 	 		$this->project_mod->insert_project($title,$category,$author,$description,$gambar,$link);
 	 		
+	 	}else{
+	 		$this->project_mod->insert_project($title,$category,$author,$description,$gambar,$link);
 	 	}
 
 	 	
@@ -47,30 +49,30 @@
 	 	redirect(base_url() . "AdminProject");
 	 }
 	 
-	 public function editProject($id=0) {
-	 	if($id>0){
+	 public function editProject() {
+	 	if($_POST['chk']>0){
+	 		$chk = $_POST['chk'];
+			$chkcount = count($chk);
+
 			$data["content_page"]="edit_form";
-			$data["data_product"]=$this->project_mod->getProjectDetail($id);
+			//echo $chkcount;
+			for($i = 0 ; $i < $chkcount ; $i++){
+				$id = $chk[$i];			
+				$data["data_project"][]=$this->project_mod->getProjectDetail($id);
+				
+				
+			}
+			// echo count($data["data_project"]);
+			// print_r($data["data_project"]);
+			// 	exit();
+			
 			$this->load->view("admin/page",$data); 
 	 	}else {
-			echo "DATA TIDAK ADA";
+			print_r($_POST['chk']) ;
 		}
 	 }
 
-	 public function deleteProject($id){
-	 	$gambar=$this->project_mod->getGambarProject($id);
-	 	$gambar="./images/product/" . $gambar;
-
-	 	if(file_exists($gambar)){
-	 		unlink($gambar);
-	 	}
-
-	 	$sql = "DELETE FROM projects_tbl WHERE id=" . $id;
-	 	$query = $this->db->query($sql);
-
-	 	redirect(base_url() . "adminProject");
-
-	 }
+	
 
 	 function delete_mul(){
 	 	error_reporting(0);
@@ -115,22 +117,32 @@
 
 
 	 public function editProjectSubmit(){
+
+		$id = $_POST['id'];
 	 	$title = $_POST["title"];
 	 	$category = $_POST["category"];
 	 	$author = $_POST["author"];
 	 	$description = $_POST["description"];
 	 	$link = $_POST["link"];
-	 	$gambar = $_POST["gambar_old"];
-	 	$gambar_old = "./images/project/" . $_POST["gambar_old"];
+	 	$gambar = "";
+		$chkcount = count($id);
 
-	 	if($this->upload->do_upload("gambar")){
-	 		$gambar=$this->upload->file_name;
-	 		if(file_exists($gambar_old)){
-	 			unlink($gambar_old);
+
+	 	
+
+	 	for($i=0; $i<$chkcount; $i++){
+
+	 		if($this->upload->do_upload("gambar[]")){
+	 			$gambar[]=$this->upload->data('file_name'); 
+	 		
 	 		}
-	 	}
+			
+			echo $title[$i] . $category[$i] . $author[$i] . $description[$i] . $gambar[$i] . $link . $id[$i] ;
+			exit();
 
-	 	$this->project_mod->editProject($name,$category,$author,$description,$gambar,$id);
+			$this->project_mod->editProject($title[$i],$category[$i],$author[$i],$description[$i],$gambar[$i],$link,$id[$i]);
+		}
+	 	
 
 	 	redirect(base_url() . "adminProject");
 	 	
