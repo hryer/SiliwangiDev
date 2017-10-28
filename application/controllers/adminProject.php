@@ -72,6 +72,20 @@
 		}
 	 }
 
+	 public function editProjectSingle($id=0){
+	 	if($id>0){
+	 		$data["content_page"]="edit_form_single";
+	 		$data["data_project"]=$this->project_mod->getProjectDetail($id);
+	 		$this->load->view("admin/page",$data);
+	 	}else{
+	 		echo "DATA TIDAK ADA";
+	 	}
+	 }
+
+	 public function editProjectSingleSubmit(){
+	 	
+	 }
+
 	
 
 	 function delete_mul(){
@@ -124,27 +138,68 @@
 	 	$author = $_POST["author"];
 	 	$description = $_POST["description"];
 	 	$link = $_POST["link"];
-	 	$gambar = "";
+	 	$gambar = $_POST["gambar_old"];
 		$chkcount = count($id);
 
-
-	 	
-
+		
+		echo "<br> id";
+		print_r($id);
+		echo "<br> title ";
+		print_r($title);
+		echo " <br> cate";
+		print_r($category);
+		echo "<br>aut ";
+		print_r($author);
+		echo "<br> desc ";
+		print_r($description);
+		echo "<br>link ";
+		print_r($link);
+		echo "<br>gambar ";
+		print_r($gambar);
+		echo "<br>chk ";
+		print_r($chkcount);
+		
 	 	for($i=0; $i<$chkcount; $i++){
 
 	 		if($this->upload->do_upload("gambar[]")){
-	 			$gambar[]=$this->upload->data('file_name'); 
-	 		
+	 			echo "if";
+	 			$gambar[$i]=$this->upload->data('file_name'); 
+	 			$this->project_mod->editProject($title[$i],$category[$i],$author[$i],$description[$i],$gambar[$i],$link[$i],$id[$i]);
+	 	// 		echo $title[$i] . $category[$i] . $author[$i] . $description[$i] . $gambar[$i] . $link . $id[$i] ;
+			// exit();
+	 		}else{
+	 			echo "else";
+	 			$gambar[$i] = "Ampas.png";
+	 			$this->project_mod->editProject($title[$i],$category[$i],$author[$i],$description[$i],$gambar[$i],$link[$i],$id[$i]);
 	 		}
+
+	 	}		
+
+	 	echo "<br> id";
+		print_r($id);
+		echo "<br> title ";
+		print_r($title);
+		echo " <br> cate";
+		print_r($category);
+		echo "<br>aut ";
+		print_r($author);
+		echo "<br> desc ";
+		print_r($description);
+		echo "<br>link ";
+		print_r($link);
+		echo "<br>gambar ";
+		print_r($gambar);
+		echo "<br>chk ";
+		print_r($chkcount);
+		
+		exit();
 			
-			echo $title[$i] . $category[$i] . $author[$i] . $description[$i] . $gambar[$i] . $link . $id[$i] ;
-			exit();
-
-			$this->project_mod->editProject($title[$i],$category[$i],$author[$i],$description[$i],$gambar[$i],$link,$id[$i]);
-		}
-	 	
-
+		
 	 	redirect(base_url() . "adminProject");
 	 	
 	 }
+
+	 
+
+
  }

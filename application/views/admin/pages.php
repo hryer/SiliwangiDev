@@ -105,7 +105,7 @@
               <?php foreach($projects_data as $rows){ ?>
               <tr>
                 <td><input type="checkbox" name="chk[]" class="chk-box" value="<?php echo $rows['id']; ?>"  ></td>
-                <td><a href="page.html"><?php echo $rows['title']; ?></a></td>
+                <td><a href="<?php echo base_url(); ?>AdminProject/editProjectSingle/<?php echo $rows['id'] ?>"><?php echo $rows['title']; ?></a></td>
                 <td><?php echo $rows['category']; ?></td>
                 <td><?php echo $rows['author']; ?></td>
                 <td><?php if(strlen($rows['description']) > 25){

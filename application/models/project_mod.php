@@ -69,19 +69,18 @@
 		}
 
 		public function editProject($title,$category,$author,$description,$gambar,$link,$id){
-			$sql ="UPDATE project_tbl SET title='" . $title . "',
+			$sql ="UPDATE projects_tbl SET title='" . $title . "',
 	 									category='" . $category . "', 
 	 									author='" . $author . "', 
 	 									description='" . $description . "', 
-	 									image='" . $gambar . "'
-	 									link='" . $link . "' 
-	 									WHERE id =" . $id ;
+	 									image='" . $gambar . "', 
+	 									link='" . $link . "'  
+	 									 WHERE id =" . $id ;
 
 
 
 	 	  $query = $this->db->query($sql);
 
-	 	  redirect(base_url() . "AdminProject");
 
 		}
 	}
