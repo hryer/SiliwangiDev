@@ -32,11 +32,11 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav">
-        <li><a href="index.html">Dashboard <span class="sr-only">(current)</span></a></li>
-        <li><a href="messages.html">Messages</a></li>
-        <li class="active"><a href="pages.html">Projects</a></li>
-        <li><a href="catagories.html">Categories</a></li>
-        <li><a href="users.html">Users</a></li>
+       <li><a href="<?php echo base_url(); ?>adminMain">Dashboard <span class="sr-only">(current)</span></a></li>
+        <li><a href="<?php echo base_url(); ?>adminMain/message">Messages</a></li>
+        <li class="active"><a href="<?php echo base_url(); ?>adminProject">Projects</a></li>
+        <li><a href="<?php echo base_url(); ?>adminCategories">Categories</a></li>
+        <li><a href="<?php echo base_url(); ?>adminUsers">Users</a></li>
        
       </ul>
       <form class="navbar-form navbar-left" role="search">

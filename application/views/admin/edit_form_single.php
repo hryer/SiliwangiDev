@@ -17,19 +17,19 @@
               <legend><h2>Form Edit Project</h2></legend>
               
               
-               <form action="<?php echo base_url(); ?>AdminProject/editProjectSubmit" method="post" enctype="multipart/form-data">
-                <?php $i = 1; ?>
-                <?php foreach ($data_project as $rows){ ?>
-                <div class="form-group">
-                <input type="hidden" name="id[]" value="<?php echo $rows->id;?>" />
+               <form action="<?php echo base_url(); ?>AdminProject/editProjectSingleSubmit" method="post" enctype="multipart/form-data">
               
-                  <label>Project Title <?php echo $i; ?></label>
-                  <input type="text" class="form-control" value="<?php echo $rows->title; ?>" name="title[]">
+
+                <div class="form-group">
+                <input type="hidden" name="id" value="<?php echo $data_project->id;?>" />
+              
+                  <label>Project Title </label>
+                  <input type="text" class="form-control" value="<?php echo $data_project->title; ?>" name="title">
                 </div>
 
                 <div class="form-group">
                   <label>Category</label>
-                  <select class="form-control" name="category[]">
+                  <select class="form-control" name="category">
                     <option value="Web Design">Web Design</option>
                     <option value="Web Programming">Web Programming</option>
                     <option value="Fullstack">Fullstack</option>
@@ -39,28 +39,27 @@
 
                 <div class="form-group">
                   <label>Project Author</label>
-                  <input type="text" class="form-control" value="<?php echo $rows->author; ?>" name="author[]">
+                  <input type="text" class="form-control" value="<?php echo $data_project->author; ?>" name="author">
                 </div>
 
 
                 <div class="form-group">
                   <label>Project Description</label>
-                  <textarea class="form-control" name="description[]"> <?php echo $rows->description; ?></textarea>
+                  <textarea class="form-control" name="description"> <?php echo $data_project->description; ?></textarea>
                 </div>
-                <input type="hidden" value="<?php echo $rows->image; ?>" name="gambar_old[]">
+                <input type="hidden" value="<?php echo $data_project->image; ?>" name="gambar_old">
                 <div class="form-group">
                   <label for="project_image">Project Image </label>
-                  <input type="file" name="gambar[]" id="project_image" required>
+                  <input type="file" name="gambar" id="project_image" required>
                   <p class="text-muted">Max Size: 3MB</p>
                 </div>
 
                 <div class="form-group">
                   <label>Link to Project</label>
-                  <input type="text" class="form-control" value="<?php echo $rows->link; ?> " name="link[]">
+                  <input type="text" class="form-control" value="<?php echo $data_project->link; ?> " name="link">
                 </div>
                 
-                <?php $i++; ?>
-                 <?php } ?>
+                
                 <button type="submit" class="btn btn-primary">Submit</button>
 
                </form>

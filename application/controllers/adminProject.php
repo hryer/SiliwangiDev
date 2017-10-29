@@ -83,7 +83,37 @@
 	 }
 
 	 public function editProjectSingleSubmit(){
+	 	$id = $_POST['id'];
+	 	$title = $_POST["title"];
+	 	$category = $_POST["category"];
+	 	$author = $_POST["author"];
+	 	$description = $_POST["description"];
+	 	$link = $_POST["link"];
+	 	$gambar = $_POST["gambar_old"];
+	 	$gambar_old = "./images/project/" . $_POST["gambar_old"];
+
+	 	if($this->upload->do_upload("gambar")){
+	 		$gambar=$this->upload->file_name;
+	 		if(file_exists($gambar_old)){
+	 			unlink($gambar_old);
+	 		}
+	 	}
+
+	 	$sql ="UPDATE projects_tbl SET title='" . $title . "',
+	 									category='" . $category . "', 
+	 									author='" . $author . "', 
+	 									description='" . $description . "', 
+	 									image='" . $gambar . "', 
+	 									link='" . $link . "'  
+	 									 WHERE id =" . $id ;
+
+
+
+	 	$query = $this->db->query($sql);
+
 	 	
+
+	 	redirect(base_url() . "adminProject");
 	 }
 
 	
