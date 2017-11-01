@@ -60,7 +60,7 @@
 					<li><a href="#team">OUR TEAM</a></li>
 					<li><a href="#portfolio">PORTFOLIO</a></li>
 					<li><a href="#contact">CONTACT US</a></li>
-					<li><a href="<?php echo base_url(); ?>blog">BLOG</a></li>
+					<!-- <li><a href="<?php echo base_url(); ?>blog">BLOG</a></li> -->
 
 				</ul><!-- nav navbar-nav-ends -->
 			</div><!-- navbar-collapse-ends -->
@@ -87,9 +87,9 @@
 									<div class="caption-wrapper text-center">
 										<div class="slide-caption">
 											<a href="#">
-											<h2>GRATIS KONSULTASI !!! <br>Konsultasikan kebutuhan Website untuk Bisnis Anda !!</h2>	
+											<h2>FREE CONSULTATION !!!<br>Do you have website for your business ? Do you have a problem to create website ? </h2>	
 											</a>
-											<p>Konsultasikan website anda dengan kami dan kami akan memberikan solusi untuk bisnis anda .GRATIS!!!</p>
+											<p>Here we are to help your problem, We can make solution for your business and make your own website today.</p>
 											
 					
 
@@ -113,7 +113,7 @@
 											<h2>DAPATKAN PROMO UNTUK PEMBUATAN WEBSITE!!!</h2>	
 											</a>
 											<p>Promo pembuatan website khusus untuk 10 customer pertama HANYA DI SILIWANGIDEV. <br>
-											BUAT WEBSITE MUDAH DAN MURAH.</p>
+											BUAT WEBSITE MUDAH , MURAH , DAN AMAN !!</p>
 
 										</div>
 									</div>
@@ -132,9 +132,9 @@
 									<div class="caption-wrapper text-center">
 										<div class="slide-caption">
 											<a href="#">
-											<h2>Business insider</h2>	
+											<h2>BUAT STARTUP GA ADA YANG DEVELOP ?</h2>	
 											</a>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quisquam odit eligendi! Numquam odio fugit quod, magnam.</p>
+											<p>KAMI JUGA MENERIMA PROJECT LANJUTAN / PROJECT BARU DENGAN HARGA YANG MURAH , KONSULTASIKAN MASALAH STARTUP ANDA DAN KAMI YANG AKAN SELESAIKAN.</p>
 
 										</div>
 									</div>
@@ -161,7 +161,7 @@
 			<div class="row">
 			<!-- col-md-6 starts -->
 				<div class="col-md-6">
-					<h2>Happy Cause I'm a Geek</h2>
+					<h2>Who we are ???</h2>
 					<h3>I'm a Introvert Person</h3>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quaerat, est, nihil, dolores sed minus blanditiis iure soluta rerum ipsum numquam. 
@@ -368,7 +368,7 @@
 								<figure>
 									<img src="<?php echo base_url();  ?>images/Team/team1.jpg" alt="Team 1" class="img-responsive">
 									<figcaption>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis quibusdam nesciunt iure dignis</p>
+										<p>I'm just a student Informatics Engineering (Computer Science) minor Applied Database ( Oracle ) at Bina Nusantara ( West Jakarta). Focusing on Web Development and Oracle Technology . Always curious about new Technology ( Geek ) .</p>
 									<ul>
 										<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
 										<li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
@@ -377,8 +377,8 @@
 									</ul>
 									</figcaption>
 								</figure>
-								<h4>Har Ermawan</h4>
-								<p>Seo Expert</p>
+								<h4>Harry Ermawan</h4>
+								<p>Founder & Front-End Web Developer</p>
 							</div> <!-- team-member ends -->
 						</div> <!-- col-md-4 ends -->
 						<div class="col-md-4"> <!-- col-md-4 starts -->
@@ -395,8 +395,8 @@
 									</ul>
 									</figcaption>
 								</figure>
-								<h4>Harwan Ermary</h4>
-								<p>Fullstack Developer</p>
+								<h4>Faishal Rachman</h4>
+								<p>Back-End & Android Developer</p>
 							</div> <!-- team-member ends -->
 						</div> <!-- col-md-4 ends -->
 						<div class="col-md-4"> <!-- col-md-4 starts -->
@@ -413,8 +413,8 @@
 									</ul>
 									</figcaption>
 								</figure>
-								<h4>Er Harry</h4>
-								<p>Article Writing</p>
+								<h4>Shem Lim</h4>
+								<p>Back-End & Data Scientist</p>
 							</div> <!-- team-member ends -->
 						</div> <!-- col-md-4 ends -->
 
@@ -757,7 +757,7 @@
 				<!-- col md 12 starts -->
 				<div class="col-md-12">
 					<h2 class="white">
-						Our Achievments
+						Our Statistic
 					</h2>
 					<h3 class="caption">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas voluptate.
@@ -766,25 +766,25 @@
 				<!-- col md 12 ends -->
 
 				<div class="col-sm-3 counter-wrap wow fadeInUp" data-wow-offset="10">
-					<strong><span class="timer">350</span></strong>
-					<span class="count-description">Clients Worked With</span>
+					<strong><span class="timer">32</span></strong>
+					<span class="count-description">Creative Design</span>
 				</div>
 
 
 				<div class="col-sm-3 counter-wrap wow fadeInUp" data-wow-offset="10">
-					<strong><span class="timer">250</span></strong>
-					<span class="count-description">Nomination</span>
+					<strong><span class="timer">50</span></strong>
+					<span class="count-description">Project</span>
 				</div>
 
 
 				<div class="col-sm-3 counter-wrap wow fadeInUp" data-wow-offset="10">
-					<strong><span class="timer">160</span></strong>
-					<span class="count-description">Awards Won</span>
+					<strong><span class="timer">18</span></strong>
+					<span class="count-description">Trusted by Client</span>
 				</div>
 
 
 				<div class="col-sm-3 counter-wrap wow fadeInUp" data-wow-offset="10">
-					<strong><span class="timer">1650</span></strong>
+					<strong><span class="timer">100</span></strong>
 					<span class="count-description">Photo Editing</span>
 				</div>
 			</div>
@@ -808,7 +808,7 @@
 				<!-- col sm 9 ends -->
 				<!-- col sm 3 starts -->
 				<div class="col-sm-3">
-					<a href="#" class="btn btn-overcolor">Get In Touch</a>	
+					<a href="#contact" class="btn btn-overcolor">Get In Touch</a>	
 				</div>
 				<!-- col sm 3 ends -->
 
@@ -829,7 +829,7 @@
 				<div class="col-md-12">
 					<h2>Contact</h2>
 					<h3 class="caption gray">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elitvoluptas corrupti sapiente odit minus consectetur a.
+						Do you have problem with website? Just drop us message
 					</h3>
 				</div>
 				<!-- col md 12 ends -->
@@ -844,7 +844,7 @@
 			<div class="row form-container">
 			<!-- col md 8 starts -->
 				<div class="col-md-8 contact-form">
-					<h3>Drop us a line</h3>
+					<h3>LET'S TALK BUSINESS</h3>
 					<form id="ContactForm" method="POST"action="<?php echo base_url(); ?>home/submitForm">
 
 						<div class="form-group">
@@ -909,12 +909,12 @@
 	<!-- row starts -->
 		<div class="row text-center">
 			<div class="col-md-12 segment">
-				<a href="#" title="siliwangidev - Html 5 Template">
+				<a href="#" title="SiliwangiDev - Digital Agency">
 					<h2>
 						<img src="<?php echo base_url();  ?>images/logo.svg" alt="siliwangidev" width="100" class="img-responsive">
 					</h2>
 				</a>
-				<p class="white">We believe in Fast Creative Flexible Design</p>
+				<p class="white">We believe in Fast Flexible Creative Design</p>
 			</div>
 		</div>
 	<!-- row ends -->

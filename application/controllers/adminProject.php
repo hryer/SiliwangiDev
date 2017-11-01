@@ -90,7 +90,7 @@
 	 	$description = $_POST["description"];
 	 	$link = $_POST["link"];
 	 	$gambar = $_POST["gambar_old"];
-	 	$gambar_old = "./images/project/" . $_POST["gambar_old"];
+	 	$gambar_old = "./images/projects/" . $_POST["gambar_old"];
 
 	 	if($this->upload->do_upload("gambar")){
 	 		$gambar=$this->upload->file_name;
@@ -132,8 +132,21 @@
 	 		</script>
 	 		<?php 
 	 	}else{
+	 		
+
+
 	 		for($i=0;$i<$chkcount;$i++){
+
 	 			$del = $chk[$i];
+
+	 			$gambar=$this->project_mod->getGambarProject($del);
+	 			$gambar="./images/projects/" . $gambar;
+	 			
+
+	 			if(file_exists($gambar)){
+	 				unlink($gambar);
+	 			}
+
 	 			$sql = "DELETE FROM projects_tbl WHERE id=".$del;
 	 			$this->db->query($sql);
 	 		}

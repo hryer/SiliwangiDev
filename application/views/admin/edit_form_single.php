@@ -49,7 +49,8 @@
                 </div>
                 <input type="hidden" value="<?php echo $data_project->image; ?>" name="gambar_old">
                 <div class="form-group">
-                  <label for="project_image">Project Image </label>
+                  <label for="project_image">Project Image </label><br>
+                  <img src="<?php echo base_url(); ?>images/projects/<?php echo $data_project->image; ?> " width="200" height="200"/><br>
                   <input type="file" name="gambar" id="project_image" required>
                   <p class="text-muted">Max Size: 3MB</p>
                 </div>

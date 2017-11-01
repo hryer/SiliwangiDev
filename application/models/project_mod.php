@@ -59,11 +59,14 @@
 
 		public function getGambarProject($id=0){
 			$result="";
-			if($id>0){
+			if($id>=0){
 				$sql="SELECT image FROM projects_tbl WHERE id=" . $id;
 				$query = $this->db->query($sql);
 				$rows=$query->row();
-				$result=$rows->gambar;
+				
+				$result=$rows->image;
+			
+
 			}
 			return $result;
 		}
