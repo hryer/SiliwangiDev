@@ -51,7 +51,7 @@
           </ul>
         </li>
 
-        <li><a href="login.html">Logout</a></li>
+        <li><a href="<?php echo base_url(); ?>AdminLogin/logOut">Logout</a></li>
       </ul>
 
     </div>
@@ -59,6 +59,7 @@
 </nav>
 
     <section>
+       
       <div class="container">
         <div class="row" >
           <div class="col-md-4">
@@ -71,6 +72,8 @@
               <li class="list-group-item"><i class="glyphicon glyphicon-user"> </i> user Accounts</li>
             </ul>
           </div>
+
+          <form method="post" name="frm">
           <div class="col-md-8">
           
             <div class="row">
@@ -80,7 +83,7 @@
               <div class="col-md-6">
                 <div class="btn-group actions" role="group" aria-label="...">
                   
-                  <a class="btn btn-default" href="#"><i class="glyphicon    glyphicon-remove"></i> Delete</a>
+                 <a class="btn btn-default" onClick="delete_records();"><i class="glyphicon    glyphicon-remove"></i> Delete</a>
                 </div>
               </div>
             </div>
@@ -107,7 +110,7 @@
                ?>
 
               <tr>
-                <td><input type="checkbox"></td>
+               <td><input type="checkbox" name="chk[]" class="chk-box" value="<?php echo $rows['id']; ?>"  ></td>
                 <td><a href="#"><?php echo $rows['name']; ?></a></td>
                 <td><?php echo $rows['email']; ?></td>
                 <td><?php echo $rows['phone']; ?></td>
@@ -119,6 +122,7 @@
                
             </tbody>
             </table>
+             </form>
 
             <nav aria-label="Page navigation">
               <ul class="pagination">
@@ -139,7 +143,8 @@
                 </li>
               </ul>
             </nav>
-         
+        
+
           </div>
         </div>
       </div>
@@ -175,6 +180,30 @@
           return !~text.indexOf(val);
         }).hide();
       });
+    </script>
+
+    <script>
+      $('document').ready(function(){
+        $(".select-all").click(function(){
+          $('.chk-box').attr('checked',this.checked)
+        });
+
+        $(".chk-box").click(function(){
+          if($(".chk-box").length == $(".chk-box:checked").length){
+            $(".select-all").attr("checked","checked");
+          }else{
+            $(".select-all").removeAttr("checked");
+          }
+        });
+      });
+    </script>
+
+
+    <script>
+       function delete_records(){
+        document.frm.action = "<?php echo base_url(); ?>adminMain/delete_mul";
+        document.frm.submit();
+      }
     </script>
   </body>
 </html>

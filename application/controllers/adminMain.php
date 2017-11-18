@@ -24,4 +24,54 @@
 	 	$data["messages_data"]=$this->mess_mod->getMessage(10);
 		$this->load->view("admin/messages",$data); 
 	 }
+
+	  function delete_mul(){
+	 	error_reporting(0);
+
+	 	$chk = $_POST['chk'];
+	 	$chkcount = count($chk);
+
+	 	if(!isset($chk)){
+	 		?>
+	 		<script>
+	 			alert('At least one checkbox Must be Selected !!!');
+	 			windows.location.href = '<?php echo base_url(); ?>adminMain/message';
+	 		</script>
+	 		<?php 
+	 	}else{
+	 		
+
+
+	 		for($i=0;$i<$chkcount;$i++){
+
+	 			$del = $chk[$i];
+
+	 			$sql = "DELETE FROM message_tbl WHERE id=".$del;
+	 			$this->db->query($sql);
+	 		}
+	 	}
+
+	 	if($sql)
+		{
+			?>
+			<script>
+			alert('<?php echo $chkcount; ?> Records Was Deleted !!!');
+			window.location.href='<?php echo base_url(); ?>adminProject';
+			</script>
+			<?php
+		}
+		else
+		{
+			?>
+			<script>
+			alert('Error while Deleting , TRY AGAIN');
+			window.location.href='<?php echo base_url(); ?>adminProject';
+			</script>
+			<?php
+		}
+	 }
+
+	
+
+
  }

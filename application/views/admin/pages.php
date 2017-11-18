@@ -50,7 +50,7 @@
           </ul>
         </li>
 
-        <li><a href="login.html">Logout</a></li>
+        <li><a href="<?php echo base_url(); ?>AdminLogin/logOut">Logout</a></li>
       </ul>
 
     </div>

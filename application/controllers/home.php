@@ -6,10 +6,12 @@ class Home extends CI_Controller{
 		parent::__construct();
 		$this->load->library('form_validation');
 		$this->load->model('mess_mod');
+		$this->load->model('project_mod');
 	}
 		
 	public function index(){
-		$this->load->view('index');
+		$data["project_data"]=$this->project_mod->getProjects(6);
+		$this->load->view('index',$data);
 	}
 
 	public function submitForm(){

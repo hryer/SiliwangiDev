@@ -18,8 +18,16 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('project_mod');
+	}
+
 	public function index(){
-		$this->load->view('index');
+		$data["project_data"]=$this->project_mod->getProjects(6);
+		$this->load->view('index',$data);
 		
 	}
 

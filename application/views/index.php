@@ -110,10 +110,10 @@
 									<div class="caption-wrapper text-center">
 										<div class="slide-caption">
 											<a href="#">
-											<h2>DAPATKAN PROMO UNTUK PEMBUATAN WEBSITE!!!</h2>	
+											<h2>PROMOTION FOR FIRST 10 CUSTOMER!!!</h2>	
 											</a>
-											<p>Promo pembuatan website khusus untuk 10 customer pertama HANYA DI SILIWANGIDEV. <br>
-											BUAT WEBSITE MUDAH , MURAH , DAN AMAN !!</p>
+											<p>BUILD PROJECT FOR COMPANY ? OR YOU ARE IN DEADLINE ? WE CAN HELP YOUR POBLEM @SILIWANGIDEV. <br>
+											EASY,CHEAP,FAST !!</p>
 
 										</div>
 									</div>
@@ -124,7 +124,7 @@
 					</li>
 					<!-- slides 2 end -->
 					<!-- slides 3 begin -->
-					<li>
+					<!-- <li>
 						<img src="<?php echo base_url();  ?>images/slides/3.jpg" class="slide-img">
 						<div class="container">
 							<div class="row">
@@ -142,7 +142,7 @@
 							</div>
 						</div>
 
-					</li>
+					</li> -->
 					<!-- slides 3 end -->
 
 
@@ -162,18 +162,18 @@
 			<!-- col-md-6 starts -->
 				<div class="col-md-6">
 					<h2>Who we are ???</h2>
-					<h3>I'm a Introvert Person</h3>
+					<h3>We're SiliwangiDev</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quaerat, est, nihil, dolores sed minus blanditiis iure soluta rerum ipsum numquam. 
+						We are geeks, nimble, open to challenge, focused on product, a bit naive, and we love our clients. We have an amazing technology platform and a ton of idea to bring it to market. 
 					</p>
 
 					<blockquote>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro explicabo, tempora deserunt accusantium odio architecto soluta sit numquam necessitatibus, nam animi, illo aliquam blanditiis officiis ipsa quo provident doloribus assumenda.
-						<span>Sad Life</span>
+						"Move fast and break things. Unless you are breaking stuff, you are not moving fast enough."  
+						<span>Mark Zuckerberg</span>
 					</blockquote>
-					<h3 class="gray light">
+					<!-- <h3 class="gray light">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio id eveniet voluptatibus dolor eaque placeat, nisi quis commodi perferendis pariatur numquam eos aliquam ipsa debitis sed, hic, molestias, officiis libero!
-					</h3>
+					</h3> -->
 				</div>
 			<!-- col-md-6 ends -->
 			<!-- col-md-6 2 starts -->
@@ -204,7 +204,7 @@
 				<div class="col-md-12"><!-- col-md-12 starts -->
 					<h2>What we do</h2>
 					<h3 class="caption gray">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						This is what we can do for you
 					</h3>
 				</div><!-- col-md-12 end -->
 				<div class="container"><!-- container starts -->
@@ -279,8 +279,8 @@
 				<div class="col-md-8"> <!-- col-md-8 starts -->
 					<div class="product-container"> <!-- product-container starts -->
 						<div class="col-md-12"> <!-- col-md-12 starts -->
-							<h2>Why we are Invisible</h2>
-							<h3 class="caption white">We are providing to be invisible man</h3>
+							<h2>Why build your website in SiliwangiDev ?</h2>
+							<h3 class="caption white">We are can make your app Scaleable , Responsive , and Unique.</h3>
 						</div> <!-- col-md-12 ends -->
 						<div class="col-md-6 product-item wow fadeIn" data-wow-offset="10"><!-- col-md-6 starts -->
 							<div class="media-left"> <!-- media-left starts -->
@@ -358,7 +358,7 @@
 			<div class="row text-center"><!-- Row Starts -->
 				<div class="col-md-12"> <!-- col-md-12 starts -->
 					<h2>Our Team</h2>
-					<h3 class="caption gray">Meet Our expertise who done the Job</h3>
+					<h3 class="caption gray">Meet Our expertise who've done the Job</h3>
 				</div> <!-- col-md-12 ends -->
 
 				<div class="container"> <!-- container starts -->
@@ -368,7 +368,7 @@
 								<figure>
 									<img src="<?php echo base_url();  ?>images/Team/team1.jpg" alt="Team 1" class="img-responsive">
 									<figcaption>
-										<p>I'm just a student Informatics Engineering (Computer Science) minor Applied Database ( Oracle ) at Bina Nusantara ( West Jakarta). Focusing on Web Development and Oracle Technology . Always curious about new Technology ( Geek ) .</p>
+										<p>He's a student Informatics Engineering (Computer Science) minor Applied Database ( Oracle ) at Bina Nusantara ( West Jakarta). Focusing on Web Development (Front-End and Back-End) . Always curious about new Technology ( Geek ) . Now work at Ralali.com as Front-End Developer.</p>
 									<ul>
 										<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
 										<li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
@@ -386,7 +386,7 @@
 								<figure>
 									<img src="<?php echo base_url();  ?>images/Team/team2.jpg" alt="Team 2" class="img-responsive">
 									<figcaption>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis quibusdam nesciunt iure dignis</p>
+										<p>He's a student Informatics Engineering (Computer Science) at Telkom University (Bandung). Focusing on Back-End and Android Development .Now work as Assistant Laboratory at Telkom University</p>
 									<ul>
 										<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
 										<li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
@@ -404,7 +404,7 @@
 								<figure>
 									<img src="<?php echo base_url();  ?>images/Team/team3.jpg" alt="Team 3" class="img-responsive">
 									<figcaption>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis quibusdam nesciunt iure dignis</p>
+										<p>He's a student Informatics Engineering (Computer Science) minor Database at Bina Nusantara ( West Jakarta) . Focusing on Data Scientist and DBA . Now work as Data Scientist at Samsung R&D Indonesia and Microsoft Stundent Partner at Microsoft</p>
 									<ul>
 										<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
 										<li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
@@ -432,7 +432,7 @@
 					<div class="col-md-12"> <!-- col-md-12 starts -->
 						<h2>Some Our Recent Work</h2>
 						<h3 class="caption white">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							These are some clients that have already put their trust in our work
 						</h3>
 					</div> <!-- col-md-12 ends -->
 				</div> <!-- row ends -->
@@ -440,57 +440,23 @@
 
 			<div class="container project-container text-center"><!-- cotainer Starts -->
 					<div class="recent-project-carousel owl-corousel owl-theme popup-gallery"> <!-- recent project starts -->
+						<?php foreach ($project_data as $rows) { ?> 
+							
 						<div class="item recent-project wow fadeIn" data-wow-offset="10"> <!-- item recent starts -->
-							<img src="<?php echo base_url();  ?>images/gallery/project-1.jpg" alt="project 1">
+							<img src="<?php echo base_url();  ?>images/projects/<?php echo $rows["image"]; ?>" alt="project 1">
 							<div class="project-info"> <!-- project info starts -->
-								<h3>Photo Editing</h3>
+								<h3><?php 	echo $rows["title"]; ?></h3>
 								<ul class="project-meta">
-									<li><a href="#">Edited Photo</a></li>
+									<li><a href="<?php 	echo $rows["link"]; ?>"><?php 	echo $rows["title"]; ?></a></li>
 								</ul>
 							</div> <!-- project info ends -->
 							<div class="full-project"><!--  full-project starts -->
-								<a href="images/gallery/showcase-1.jpg" title="Photo Editing | Edited Photo">View Project <i class="fa fa-chevron-right"></i></a>
-							</div>  <!-- full-project ends -->
-						</div><!-- item recent ends -->
-
-						<div class="item recent-project wow fadeIn" data-wow-offset="10"> <!-- item recent starts -->
-							<img src="<?php echo base_url();  ?>images/gallery/project-2.jpg" titlealt="project 2">
-							<div class="project-info"> <!-- project info starts -->
-								<h3>Illustrations</h3>
-								<ul class="project-meta">
-									<li><a href="#">Illustrated Image</a></li>
-								</ul>
-							</div> <!-- project info ends -->
-							<div class="full-project"><!--  full-project starts -->
-								<a href="images/gallery/showcase-2.jpg" title="Illustrating Image | Illustrated Photo">View Project <i class="fa fa-chevron-right"></i></a>
+								<a href="<?php echo base_url();  ?>images/projects/<?php echo $rows["image"]; ?>" title="<?php 	echo $rows["description"]; ?>">View Project <i class="fa fa-chevron-right"></i></a>
 							</div>  <!-- full-project ends -->
 						</div><!-- item recent ends -->
 						
-						<div class="item recent-project wow fadeIn" data-wow-offset="10"> <!-- item recent starts -->
-							<img src="<?php echo base_url();  ?>images/gallery/project-3.jpg" alt="project 3">
-							<div class="project-info"> <!-- project info starts -->
-								<h3>Web Design</h3>
-								<ul class="project-meta">
-									<li><a href="#">Design Web Company Web</a></li>
-								</ul>
-							</div> <!-- project info ends -->
-							<div class="full-project"><!--  full-project starts -->
-								<a href="images/gallery/showcase-3.jpg" title="Web Design | Design Web">View Project <i class="fa fa-chevron-right"></i></a>
-							</div>  <!-- full-project ends -->
-						</div><!-- item recent ends -->
-
-						<div class="item recent-project wow fadeIn" data-wow-offset="10"> <!-- item recent starts -->
-							<img src="<?php echo base_url();  ?>images/gallery/project-4.jpg" alt="project 4">
-							<div class="project-info"> <!-- project info starts -->
-								<h3>Article Writing</h3>
-								<ul class="project-meta">
-									<li><a href="#">Koran kompas article</a></li>
-								</ul>
-							</div> <!-- project info ends -->
-							<div class="full-project"><!--  full-project starts -->
-								<a href="images/gallery/showcase-4.jpg" title="Article Writing | Example">View Project <i class="fa fa-chevron-right"></i></a>
-							</div>  <!-- full-project ends -->
-						</div><!-- item recent ends -->
+						<?php } ?> 
+						
 				
 					</div><!-- recent project ends -->
 					
@@ -648,11 +614,6 @@
 					</a>
 				</div><!-- item ends -->
 
-				<div class="item col-xs-4 col-md-2 i"><!-- item starts -->
-					<a href="#" title="qmobile">
-						<img src="<?php echo base_url();  ?>images/clients/qmobile-logo.png" class="img-responsive" alt="">
-					</a>
-				</div><!-- item ends -->
 
 				<div class="item col-xs-4 col-md-2 i"><!-- item starts -->
 					<a href="#" title="microsoft">
@@ -668,52 +629,36 @@
 	<!-- client section ends -->
 
 	<!-- testimonials starts -->
-	<section class="testimonials content-section wow fadeIn" data-wow-offset="10">
-		<div class="container"><!-- container starts -->
-			<div class="row text-center"><!-- row starts -->
-				<div class="col-md-12"><!-- col-md-12 starts -->
-					<h2>Rated 4.5 out of 5</h2>
-					<h3 class="caption gray">Here's what our clients have to say</h3>
-				</div><!-- col-md-12 ends -->
+	<!-- <section class="testimonials content-section wow fadeIn" data-wow-offset="10"> -->
+		<!-- <div class="container"> --><!-- container starts -->
+			<!-- <div class="row text-center"> --><!-- row starts -->
+				<!-- <div class="col-md-12"> --><!-- col-md-12 starts -->
+					<!-- <h2>Rated 4.5 out of 5</h2>
+					<h3 class="caption gray">Here's what our clients have to say</h3> -->
+				<!-- </div> --><!-- col-md-12 ends -->
 
-				<div class="container"><!-- container starts -->
-					<div class="row"><!-- row starts -->
-						<div class="col-md-8 col-md-offset-2"><!-- cm8cmo2 starts -->
-							<div class="client-testimonials owl-carousel owl-theme"><!-- client testi starts -->
-								<div class="item"> <!-- item starts -->
-								<p class="speech">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt libero dicta deserunt dignissimos aspernatur ab sapiente.</p>
-								<div class="client-info"> <!-- client info starts -->
-									<img src="<?php echo base_url();  ?>images/testimonials/reema.jpg">
-									<h4>Reema Khan</h4>
-									<span>Sarap Industry</span>
-								</div> <!-- client info ends -->
-								</div><!-- item ends -->
+				<!-- <div class="container"> --><!-- container starts -->
+					<!-- <div class="row"> --><!-- row starts -->
+						<!-- <div class="col-md-8 col-md-offset-2"> --><!-- cm8cmo2 starts -->
+							<!-- <div class="client-testimonials owl-carousel owl-theme"> --><!-- client testi starts -->
+								<!-- <div class="item">  --><!-- item starts -->
+								<!-- <p class="speech">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt libero dicta deserunt dignissimos aspernatur ab sapiente.</p> -->
+								<!-- <div class="client-info"> --> <!-- client info starts -->
+									<!-- <img src="<?php echo base_url();  ?>images/testimonials/reema.jpg"> -->
+									<<!-- h4>Reema Khan</h4>
+									<span>Sarap Industry</span> -->
+								<!-- </div> --> <!-- client info ends -->
+								<!-- </div> --><!-- item ends -->
 
-								<div class="item"> <!-- item starts -->
-								<p class="speech">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt libero dicta deserunt dignissimos aspernatur ab sapiente.</p>
-								<div class="client-info"> <!-- client info starts -->
-									<img src="<?php echo base_url();  ?>images/testimonials/nazia.jpg">
-									<h4>Nazia Lodhi</h4>
-									<span>Fuji Coporate</span>
-								</div> <!-- client info ends -->
-								</div><!-- item ends -->
-
-								<div class="item"> <!-- item starts -->
-								<p class="speech">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt libero dicta deserunt dignissimos aspernatur ab sapiente.</p>
-								<div class="client-info"> <!-- client info starts -->
-									<img src="<?php echo base_url();  ?>images/testimonials/maya.jpg">
-									<h4>Maya Shastri</h4>
-									<span>Nirma Industry</span>
-								</div> <!-- client info ends -->
-								</div><!-- item ends -->
-							</div><!-- client testi ends -->
-						</div><!-- cm8cmo2  ends -->
-					</div><!-- row ends -->
-				</div><!-- container ends -->
-			</div><!-- row ends -->
+								
+							<!-- </div> --><!-- client testi ends -->
+						<!-- </div> --><!-- cm8cmo2  ends -->
+					<!-- </div> --><!-- row ends -->
+				<!-- </div> --><!-- container ends -->
+			<!-- </div> --><!-- row ends -->
 			
-		</div><!-- container ends -->
-	</section>
+		<!-- </div> --><!-- container ends -->
+	<!-- </section> -->
 	<!-- testiomonials ends -->
 	<!-- Call to  action starts -->
 	<section class="cta-one-section content-section alt-bg-light">
@@ -723,12 +668,12 @@
 			<div class="row text-center"> 
 				<!-- col md 6 starts -->
 				<div class="col-md-6 wow slideInLeft" data-wow-offset="10">
-					<h2>We Have A Creative Platform</h2>
+					<h2>We Have A Creative & Responsive Design</h2>
 					<h3 class="caption gray">
-						Optional title for call to action
+						All our works is comptibale with any Devices
 					</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maxime inventore in amet quia repudiandae ab non facilis ut iure ipsam delectus fugiat voluptatibus nesciunt, suscipit quas ratione perferendis quasi.
+						Cross Browsing , Compitable with all Devices , Creative , and Unique is our Motto .
 					</p>
 					<a href="#" class="btn btn-default btn-lg">Questions</a>
 					<a href="#" class="btn btn-outlined btn-lg">Contact Us</a>
@@ -760,7 +705,7 @@
 						Our Statistic
 					</h2>
 					<h3 class="caption">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas voluptate.
+						This's what we've done to our project.
 					</h3>
 				</div>
 				<!-- col md 12 ends -->
@@ -829,7 +774,7 @@
 				<div class="col-md-12">
 					<h2>Contact</h2>
 					<h3 class="caption gray">
-						Do you have problem with website? Just drop us message
+						Have a problem to create a website? Just drop us message
 					</h3>
 				</div>
 				<!-- col md 12 ends -->
