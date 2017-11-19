@@ -4,7 +4,7 @@
 	 public function __construct() {
 		parent::__construct();
 		$this->load->library("session");
-		$this->load->model("admin_mod"); 
+		$this->load->model("Admin_mod"); 
 		$uploadconfig["upload_path"]="./images/product/";
 		$uploadconfig["allowed_types"]="gif|jpg|png";
 		$uploadconfig["max_size"]=10240;
@@ -14,14 +14,14 @@
 	 }
 	 
 	 public function index() {
-		$data["projects_data"]=$this->admin_mod->getProjects(5);
-		$data["admins_data"]=$this->admin_mod->getAdmin(5);
+		$data["projects_data"]=$this->Admin_mod->getProjects(5);
+		$data["admins_data"]=$this->Admin_mod->getAdmin(5);
 		$this->load->view("admin/index",$data); 
 	 }
 
 	 public function message(){
-	 	$this->load->model("mess_mod");
-	 	$data["messages_data"]=$this->mess_mod->getMessage(10);
+	 	$this->load->model("Mess_mod");
+	 	$data["messages_data"]=$this->Mess_mod->getMessage(10);
 		$this->load->view("admin/messages",$data); 
 	 }
 
@@ -35,7 +35,7 @@
 	 		?>
 	 		<script>
 	 			alert('At least one checkbox Must be Selected !!!');
-	 			windows.location.href = '<?php echo base_url(); ?>adminMain/message';
+	 			windows.location.href = '<?php echo base_url(); ?>AdminMain/message';
 	 		</script>
 	 		<?php 
 	 	}else{
@@ -56,7 +56,7 @@
 			?>
 			<script>
 			alert('<?php echo $chkcount; ?> Records Was Deleted !!!');
-			window.location.href='<?php echo base_url(); ?>adminProject';
+			window.location.href='<?php echo base_url(); ?>AdminProject';
 			</script>
 			<?php
 		}
@@ -65,7 +65,7 @@
 			?>
 			<script>
 			alert('Error while Deleting , TRY AGAIN');
-			window.location.href='<?php echo base_url(); ?>adminProject';
+			window.location.href='<?php echo base_url(); ?>AdminProject';
 			</script>
 			<?php
 		}

@@ -4,7 +4,7 @@
 	 public function __construct() {
 		parent::__construct();
 		$this->load->library("session");
-		$this->load->model("project_mod"); 
+		$this->load->model("Project_mod"); 
 		$uploadconfig["upload_path"]="./images/projects/";
 		$uploadconfig["allowed_types"]="gif|jpg|png";
 		$uploadconfig["max_size"]=10240;
@@ -14,7 +14,7 @@
 	 }
 	 
 	 public function index() {
-		$data["projects_data"]=$this->project_mod->getProjects(0);
+		$data["projects_data"]=$this->Project_mod->getProjects(0);
 		$this->load->view("admin/pages",$data); 
 	 }
 	 
@@ -38,10 +38,10 @@
 	 		$gambar=$this->upload->data('file_name'); 
 	 		// echo $gambar;
 	 		// exit(0);
-	 		$this->project_mod->insert_project($title,$category,$author,$description,$gambar,$link);
+	 		$this->Project_mod->insert_project($title,$category,$author,$description,$gambar,$link);
 	 		
 	 	}else{
-	 		$this->project_mod->insert_project($title,$category,$author,$description,$gambar,$link);
+	 		$this->Project_mod->insert_project($title,$category,$author,$description,$gambar,$link);
 	 	}
 
 	 	
@@ -58,7 +58,7 @@
 			//echo $chkcount;
 			for($i = 0 ; $i < $chkcount ; $i++){
 				$id = $chk[$i];			
-				$data["data_project"][]=$this->project_mod->getProjectDetail($id);
+				$data["data_project"][]=$this->Project_mod->getProjectDetail($id);
 				
 				
 			}
@@ -75,7 +75,7 @@
 	 public function editProjectSingle($id=0){
 	 	if($id>0){
 	 		$data["content_page"]="edit_form_single";
-	 		$data["data_project"]=$this->project_mod->getProjectDetail($id);
+	 		$data["data_project"]=$this->Project_mod->getProjectDetail($id);
 	 		$this->load->view("admin/page",$data);
 	 	}else{
 	 		echo "DATA TIDAK ADA";
@@ -113,7 +113,7 @@
 
 	 	
 
-	 	redirect(base_url() . "adminProject");
+	 	redirect(base_url() . "AdminProject");
 	 }
 
 	
@@ -139,7 +139,7 @@
 
 	 			$del = $chk[$i];
 
-	 			$gambar=$this->project_mod->getGambarProject($del);
+	 			$gambar=$this->Project_mod->getGambarProject($del);
 	 			$gambar="./images/projects/" . $gambar;
 	 			
 
@@ -157,7 +157,7 @@
 			?>
 			<script>
 			alert('<?php echo $chkcount; ?> Records Was Deleted !!!');
-			window.location.href='<?php echo base_url(); ?>adminProject';
+			window.location.href='<?php echo base_url(); ?>AdminProject';
 			</script>
 			<?php
 		}
@@ -166,7 +166,7 @@
 			?>
 			<script>
 			alert('Error while Deleting , TRY AGAIN');
-			window.location.href='<?php echo base_url(); ?>adminProject';
+			window.location.href='<?php echo base_url(); ?>AdminProject';
 			</script>
 			<?php
 		}
@@ -207,7 +207,7 @@
 	 		if($this->upload->do_upload("gambar[]")){
 	 			echo "if";
 	 			$gambar[$i]=$this->upload->data('file_name'); 
-	 			$this->project_mod->editProject($title[$i],$category[$i],$author[$i],$description[$i],$gambar[$i],$link[$i],$id[$i]);
+	 			$this->Project_mod->editProject($title[$i],$category[$i],$author[$i],$description[$i],$gambar[$i],$link[$i],$id[$i]);
 	 	// 		echo $title[$i] . $category[$i] . $author[$i] . $description[$i] . $gambar[$i] . $link . $id[$i] ;
 			// exit();
 	 		}else{
@@ -238,7 +238,7 @@
 		exit();
 			
 		
-	 	redirect(base_url() . "adminProject");
+	 	redirect(base_url() . "AdminProject");
 	 	
 	 }
 

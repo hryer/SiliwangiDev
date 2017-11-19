@@ -1,6 +1,6 @@
 <?php 
 	
-	class mess_mod extends CI_Model{
+	class Mess_mod extends CI_Model{
 
 		public function __construct(){
 			parent::__construct();

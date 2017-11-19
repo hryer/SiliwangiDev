@@ -22,11 +22,11 @@ class Welcome extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('project_mod');
+		$this->load->model('Project_mod');
 	}
 
 	public function index(){
-		$data["project_data"]=$this->project_mod->getProjects(6);
+		$data["project_data"]=$this->Project_mod->getProjects(6);
 		$this->load->view('index',$data);
 		
 	}

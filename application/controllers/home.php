@@ -5,8 +5,8 @@ class Home extends CI_Controller{
 	public function __construct(){
 		parent::__construct();
 		$this->load->library('form_validation');
-		$this->load->model('mess_mod');
-		$this->load->model('project_mod');
+		$this->load->model('Mess_mod');
+		$this->load->model('Project_mod');
 	}
 		
 	public function index(){
@@ -36,7 +36,7 @@ class Home extends CI_Controller{
                     	'description' => $message  
                     );
 
-            $this->mess_mod->insert_message($data,'message_tbl');
+            $this->Mess_mod->insert_message($data,'message_tbl');
 
 	 		$this->load->view("thanks");
 	 	}
