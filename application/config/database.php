@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'main_db',
+	'hostname' => 'ls-5a419202342f64929d50ed880e6726c8910a1e8a.c5yqi4dcivcf.ap-southeast-1.rds.amazonaws.com:3306',
+	'username' => 'dbmasteruser',
+	'password' => '#Libra310758',
+	'database' => 'dbmaster',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
